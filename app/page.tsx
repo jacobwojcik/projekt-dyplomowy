@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import { supabase } from '@/lib/utils';
 
 export default async function Home() {
