@@ -41,8 +41,6 @@ export default async function Page() {
         cons={ssrCons}
       />
       <ProductsList products={products} currentTime={currentTime} />
-
-      {/* {JSON.stringify(products)} */}
     </div>
   );
 }
