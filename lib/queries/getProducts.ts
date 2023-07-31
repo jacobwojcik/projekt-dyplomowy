@@ -10,5 +10,5 @@ export const getProducts = async () => {
     .select('*')
     .returns<Product[]>();
 
-  return products;
+  return products ?? [];
 };
