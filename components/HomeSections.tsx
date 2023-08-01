@@ -15,15 +15,15 @@ const renderingStrategies: { name: string; href: string }[] = [
   },
   {
     name: 'ISR',
-    href: '/renderowanie/ISR',
+    href: '/renderowanie/isr',
   },
 ];
 
 const HomeSections = () => {
   return (
-    <div className="my-6 text-center border border-zinc-200 w-full max-w-xl py-4 rounded-lg">
+    <div className="my-6 w-full max-w-xl rounded-lg border border-zinc-200 py-4 text-center">
       <h2 className="text-md">Strategie renderowania</h2>
-      <div className="flex justify-center gap-4 my-4">
+      <div className="my-4 flex justify-center gap-4">
         {renderingStrategies.map(({ name, href }) => (
           <ButtonLink key={href} href={href}>
             {name}

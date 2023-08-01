@@ -19,3 +19,10 @@ export interface Time {
   utc_offset: string;
   week_number: number;
 }
+
+export interface RenderingStrategiesInfo {
+  title: string;
+  description: string;
+  pros: string[];
+  cons: string[];
+}

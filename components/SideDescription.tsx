@@ -6,15 +6,14 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/CardNew';
+import type { RenderingStrategiesInfo } from '@/types';
 
 interface Props {
-  title: string;
-  description: string;
-  pros?: string[];
-  cons?: string[];
+  information: RenderingStrategiesInfo;
 }
 
-const SideDescription = ({ title, description, pros, cons }: Props) => {
+const SideDescription = ({ information }: Props) => {
+  const { title, description, pros, cons } = information;
   return (
     <div>
       <Card className="w-[420px]">
