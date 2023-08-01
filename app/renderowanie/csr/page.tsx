@@ -18,13 +18,20 @@ const csrCons = [
   'ZWydajność na urządzeniach mobilnych',
 ];
 const fetchProducts = async () => {
-  const host = process.env.NEXT_PUBLIC_VERCEL_URL
-    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-    : 'http://localhost:3000';
+  try {
+    const host = process.env.NEXT_PUBLIC_VERCEL_URL
+      ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+      : 'http://localhost:3000';
 
-  const products = await fetch(`${host}/api/products`);
-  const res = await products.json();
-  return res;
+    console.log(host);
+
+    const products = await fetch(`${host}/api/products`);
+    const res = await products.json();
+    return res;
+  } catch (e) {
+    console.error(e);
+  }
+  return undefined;
 };
 
 const getCurrentTime = async () => {
