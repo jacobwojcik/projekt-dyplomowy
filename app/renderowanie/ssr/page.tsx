@@ -16,7 +16,7 @@ const ssrCons = [
 
 const getCurrentTime = async () => {
   try {
-    const res = await fetch('http://worldtimeapi.org/api/timezone/Poland', {
+    const res = await fetch('https://worldtimeapi.org/api/timezone/Poland', {
       cache: 'no-cache',
     });
     const currentTime = await res.json();
