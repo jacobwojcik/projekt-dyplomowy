@@ -9,7 +9,7 @@ export default async function Page() {
   const currentTime = await getCurrentTime({ cache: 'no-cache' });
 
   return (
-    <div className="mx-10 my-6 flex gap-8">
+    <div className="my-6 flex gap-8">
       <SideDescription information={renderingStrategiesInfo.ssr} />
       <ProductsList products={products} currentTime={currentTime} />
     </div>

@@ -5,7 +5,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@/components/ui/CardNew';
+} from '@/components/ui/Card';
 import type { RenderingStrategiesInfo } from '@/types';
 
 interface Props {

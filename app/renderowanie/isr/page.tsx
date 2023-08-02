@@ -13,7 +13,7 @@ export default async function Page() {
   });
 
   return (
-    <div className="mx-10 my-6 flex gap-8">
+    <div className="my-6 flex gap-8">
       <SideDescription information={renderingStrategiesInfo.isr} />
       <ProductsList products={products} currentTime={currentTime} />
     </div>

@@ -42,7 +42,7 @@ export default function Page() {
     fetchCurrentTime();
   }, []);
   return (
-    <div className="mx-10 my-6 flex gap-8">
+    <div className="my-6 flex gap-8">
       <SideDescription information={renderingStrategiesInfo.csr} />
       <ProductsList products={products} currentTime={currentTime} />
     </div>

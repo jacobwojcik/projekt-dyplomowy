@@ -2,10 +2,12 @@ import Link from 'next/link';
 
 const Header = () => {
   return (
-    <header className="p-4 border border-b-2">
-      <Link className="font-semibold text-lg" href={'/'}>
-        Strona Główna
-      </Link>
+    <header className="border-b-2 p-4">
+      <div className="mx-auto max-w-7xl">
+        <Link className="text-lg font-semibold" href={'/'}>
+          Strona Główna
+        </Link>
+      </div>
     </header>
   );
 };

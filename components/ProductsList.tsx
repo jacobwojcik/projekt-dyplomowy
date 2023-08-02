@@ -4,7 +4,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@/components/ui/CardNew';
+} from '@/components/ui/Card';
 import { formatTime } from '@/lib/helpers';
 import type { Product, Time } from '@/types';
 
