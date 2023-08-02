@@ -1,4 +1,5 @@
 import { ButtonLink } from './ui/ButtonLink';
+import { Separator } from './ui/Separator';
 
 const renderingStrategies: { name: string; href: string }[] = [
   {
@@ -30,12 +31,21 @@ const HomeSections = () => {
           </ButtonLink>
         ))}
       </div>
-      <span className="my-2 block w-full border-b border-zinc-200"></span>
+
+      <Separator className="mb-4" />
 
       <span>Optymalizacja pod kątem SEO</span>
       <div className="my-4 flex justify-center gap-4">
         <ButtonLink href={`/bez-optymalizacji`}>Bez optymalizacji</ButtonLink>
         <ButtonLink href={`/z-optymalizacja`}>Z optymalizacją</ButtonLink>
+      </div>
+
+      <Separator className="mb-4" />
+
+      <span>Dodatkowe</span>
+      <div className="my-4 flex justify-center gap-4">
+        <ButtonLink href={`/ssr-streaming`}>SSR Streaming</ButtonLink>
+        <ButtonLink href={`/tbd`}>TBD</ButtonLink>
       </div>
     </div>
   );
