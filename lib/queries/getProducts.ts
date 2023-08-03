@@ -7,7 +7,7 @@ export const getProducts = async () => {
 
   const { data: products } = await supabase
     .from('product')
-    .select('*')
+    .select('*, category(name)')
     .returns<Product[]>();
 
   return products ?? [];

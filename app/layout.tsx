@@ -9,7 +9,7 @@ import Header from '@/components/Header';
 const font = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Aplikacja Next.js',
+  title: 'Jak tworzyć aplikacje webowe?',
   description:
     'Tworzenie i optymalizacja nowoczesnych aplikacji webowych przy użyciu Next.js',
 };

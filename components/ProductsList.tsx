@@ -1,14 +1,8 @@
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/Card';
 import { formatTime } from '@/lib/helpers';
 import type { Product, Time } from '@/types';
 
 import ProductItem from './ui/ProductItem';
+import { Separator } from './ui/Separator';
 
 interface Props {
   products: Product[];
@@ -19,23 +13,27 @@ const ProductsList = ({ products, currentTime }: Props) => {
   const time = formatTime(currentTime.datetime);
 
   return (
-    <Card className="w-full">
-      <CardHeader className="flex flex-row items-center justify-between">
-        <CardTitle>Lista produktów</CardTitle>
+    <div className="w-full">
+      <div className="mb-4 flex flex-row items-center justify-between">
+        <h1 className="text-lg font-semibold">Lista produktów</h1>
         <time>{currentTime?.datetime ? time : 'Loading...'}</time>
+
         {/* <CardDescription>{description}</CardDescription> */}
-      </CardHeader>
-      <CardContent>
+      </div>
+      <Separator />
+      <div>
         {products.length ? (
           products.map((product) => (
-            <ProductItem key={product.id} product={product} />
+            <div key={product.id}>
+              <ProductItem product={product} />
+              <Separator />
+            </div>
           ))
         ) : (
           <span>Loading...</span>
         )}
-      </CardContent>
-      <CardFooter></CardFooter>
-    </Card>
+      </div>
+    </div>
   );
 };
 

@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-import ProductsList from '@/components/ProductsList';
-import SideDescription from '@/components/SideDescription';
+import RenderingPage from '@/components/RenderingPage';
 import { renderingStrategiesInfo } from '@/lib/consts/renderingStrategiesInfo';
 import type { Time } from '@/types';
 
@@ -13,6 +12,7 @@ const host = process.env.NEXT_PUBLIC_VERCEL_URL
 
 export default function Page() {
   const [products, setProducts] = useState([]);
+  const [blogPosts, setBlogPosts] = useState([]);
   const [currentTime, setCurrentTime] = useState<Time>({} as Time);
 
   useEffect(() => {
@@ -27,11 +27,22 @@ export default function Page() {
       }
     };
 
+    const fetchBlogPostsData = async () => {
+      try {
+        const res = await fetch(`${host}/api/posts`);
+        const data = await res.json();
+        setBlogPosts(data);
+      } catch (error) {
+        // eslint-disable-next-line no-console
+        console.error('Wystąpił błąd:', error);
+      }
+    };
+
     const fetchCurrentTime = async () => {
       try {
         const res = await fetch('https://worldtimeapi.org/api/timezone/Poland');
-        const currentTime = await res.json();
-        setCurrentTime(currentTime);
+        const time = await res.json();
+        setCurrentTime(time);
       } catch (error) {
         // eslint-disable-next-line no-console
         console.error('Wystąpił błąd:', error);
@@ -40,11 +51,14 @@ export default function Page() {
 
     fetchProductsData();
     fetchCurrentTime();
+    fetchBlogPostsData();
   }, []);
   return (
-    <div className="my-6 flex gap-8">
-      <SideDescription information={renderingStrategiesInfo.csr} />
-      <ProductsList products={products} currentTime={currentTime} />
-    </div>
+    <RenderingPage
+      information={renderingStrategiesInfo.csr}
+      products={products}
+      currentTime={currentTime}
+      blogPosts={blogPosts}
+    />
   );
 }

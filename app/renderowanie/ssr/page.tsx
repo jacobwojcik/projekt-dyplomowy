@@ -1,17 +1,21 @@
-import ProductsList from '@/components/ProductsList';
-import SideDescription from '@/components/SideDescription';
+import RenderingPage from '@/components/RenderingPage';
 import { renderingStrategiesInfo } from '@/lib/consts/renderingStrategiesInfo';
-import { getProducts } from '@/lib/queries';
+import { getBlogPosts, getProducts } from '@/lib/queries';
 import { getCurrentTime } from '@/lib/utils';
 
 export default async function Page() {
-  const products = await getProducts();
-  const currentTime = await getCurrentTime({ cache: 'no-cache' });
+  const [products, currentTime, blogPosts] = await Promise.all([
+    getProducts(),
+    getCurrentTime({ cache: 'no-cache' }),
+    getBlogPosts(),
+  ]);
 
   return (
-    <div className="my-6 flex gap-8">
-      <SideDescription information={renderingStrategiesInfo.ssr} />
-      <ProductsList products={products} currentTime={currentTime} />
-    </div>
+    <RenderingPage
+      information={renderingStrategiesInfo.ssr}
+      products={products}
+      currentTime={currentTime}
+      blogPosts={blogPosts}
+    />
   );
 }
