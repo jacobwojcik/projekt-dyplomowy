@@ -1,4 +1,9 @@
-import type { BlogPost, Product, RenderingStrategiesInfo, Time } from '@/types';
+import type {
+  BlogPost,
+  ProductInfo,
+  RenderingStrategiesInfo,
+  Time,
+} from '@/types';
 
 import BlogPosts from './BlogPosts';
 import ProductsList from './ProductsList';
@@ -6,7 +11,7 @@ import SideDescription from './SideDescription';
 
 interface Props {
   information: RenderingStrategiesInfo;
-  products: Product[];
+  products: ProductInfo[];
   currentTime: Time;
   blogPosts: BlogPost[];
 }
