@@ -7,10 +7,10 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/Card';
-import type { Product } from '@/types';
+import type { ProductInfo } from '@/types';
 
 interface Props {
-  product: Product;
+  product: ProductInfo;
 }
 
 const ProductCard = ({ product }: Props) => {

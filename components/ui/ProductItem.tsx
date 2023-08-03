@@ -1,11 +1,11 @@
 import Image from 'next/image';
 
-import type { Product } from '@/types';
+import type { ProductInfo } from '@/types';
 
 import { Badge } from './Badge';
 
 interface Props {
-  product: Product;
+  product: ProductInfo;
 }
 
 const ProductItem = ({ product }: Props) => {

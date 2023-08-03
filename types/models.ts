@@ -1,6 +1,11 @@
 import type { Database } from './supabase';
 
 export type Product = Database['public']['Tables']['product']['Row'];
+export type Category = Database['public']['Tables']['category']['Row'];
+
+export type ProductInfo = Product & {
+  category: { name: string };
+};
 export type BlogPost = Database['public']['Tables']['blog_post']['Row'];
 
 export interface Time {

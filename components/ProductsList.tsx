@@ -1,11 +1,11 @@
 import { formatTime } from '@/lib/helpers';
-import type { Product, Time } from '@/types';
+import type { ProductInfo, Time } from '@/types';
 
 import ProductItem from './ui/ProductItem';
 import { Separator } from './ui/Separator';
 
 interface Props {
-  products: Product[];
+  products: ProductInfo[];
   currentTime: Time;
 }
 
