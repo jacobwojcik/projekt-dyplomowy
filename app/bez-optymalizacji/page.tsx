@@ -1,11 +1,16 @@
 import './style.css';
 
-import ProductCard from '@/components/ProductCard';
-import { getProducts } from '@/lib/queries';
+import type { Metadata } from 'next';
+
+import BlogPostsUnoptimized from '@/components/SeoOptimization/BlogPosts';
+import ProductsList from '@/components/SeoOptimization/ProductsList';
+
+export const metadata: Metadata = {
+  title: '',
+  description: '',
+};
 
 export default async function Page() {
-  const products = await getProducts();
-
   return (
     <main className="mx-auto my-6 max-w-7xl">
       <div className="mx-4 flex flex-col gap-6 md:col-span-1">
@@ -14,7 +19,7 @@ export default async function Page() {
             <h1 className="font-roboto mb-2 text-2xl font-semibold">
               Bez optymalizacji
             </h1>
-            <span className="font-roboto">
+            <span className="font-roboto text-xs sm:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               nulla justo, consectetur sit amet dui ac, ultrices viverra tortor.
               Duis eget rhoncus nulla. Morbi vel nibh et ex sagittis ultrices.
@@ -28,28 +33,39 @@ export default async function Page() {
             </span>
           </div>
           <div className="col-span-2 mx-auto flex w-2/3 flex-col items-center justify-center gap-6">
+            {/* eslint-disable-next-line jsx-a11y/alt-text */}
             <img
               className="rounded-lg"
               src="https://mangools.com/blog/wp-content/uploads/2019/07/learn-seo-new-t.png"
-              alt="Image 1"
               width={560}
             ></img>
           </div>
         </div>
       </div>
 
-      <div className="mx-4 w-full md:col-span-2">
-        <h1 className="my-4 text-lg font-semibold">Najnowsze okazje!</h1>
-        <div className="grid-col-1 my-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
+      <ProductsList />
+
+      <section className="m-4 mt-8 ">
+        <h3 className="text-lg font-semibold">Niepoprawne linki</h3>
+        <div className="flex items-center justify-center gap-6">
+          <a className="rounded-lg bg-black px-3 py-2 text-white hover:opacity-75">
+            Niedziałający link
+          </a>
+          <a
+            href="/"
+            className="rounded-lg bg-black px-3 py-2 text-white hover:opacity-75"
+          >
+            Start
+          </a>
         </div>
-      </div>
+      </section>
+      <BlogPostsUnoptimized />
+
       <section className="col-span-3 px-4">
-        <h2 className="mb-6 text-lg font-semibold">Wyniki:</h2>
+        <h1 className="mb-6 text-lg font-semibold">Wyniki:</h1>
         <div className="flex w-full justify-center">
-          <img src="/score.png" alt="Wynik" />
+          {/* eslint-disable-next-line jsx-a11y/alt-text */}
+          <img src="/score.png" />
         </div>
       </section>
     </main>

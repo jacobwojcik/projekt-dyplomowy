@@ -15,7 +15,7 @@ interface Props {
 
 const ProductCard = ({ product }: Props) => {
   return (
-    <Card className="w-[260px] text-center">
+    <Card className="text-center sm:w-[260px]">
       <CardHeader className="w-full">
         <CardTitle>{product.name}</CardTitle>
       </CardHeader>
