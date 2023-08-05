@@ -44,7 +44,7 @@ const HomeSections = () => {
 
       <span>Dodatkowe</span>
       <div className="my-4 flex justify-center gap-4">
-        <ButtonLink href={`/ssr-streaming`}>SSR Streaming</ButtonLink>
+        <ButtonLink href={`/sr-streaming`}>Server Side Streaming</ButtonLink>
         <ButtonLink href={`/tbd`}>TBD</ButtonLink>
       </div>
     </div>
