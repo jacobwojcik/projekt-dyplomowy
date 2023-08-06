@@ -1,15 +1,13 @@
 import HomeHero from '@/components/HomeHero';
-import HomeSections from '@/components/HomeSections';
+import HowToOptimize from '@/components/HowToOptimize';
+import RenderingStategies from '@/components/RenderingStategies';
 
 export default async function Home() {
   return (
-    <main
-      className="flex flex-col items-center p-24"
-      style={{ minHeight: 'calc(100vh - 126px)' }}
-    >
+    <main style={{ minHeight: 'calc(100vh - 126px)' }}>
       <HomeHero />
-
-      <HomeSections />
+      <RenderingStategies />]
+      <HowToOptimize />
     </main>
   );
 }

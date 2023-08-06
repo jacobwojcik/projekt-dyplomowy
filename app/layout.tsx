@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${font.className} min-h-screen`}>
         <Header />
-        <main className="mx-auto max-w-7xl">{children}</main>
+        <main className="">{children}</main>
         <Footer />
       </body>
     </html>

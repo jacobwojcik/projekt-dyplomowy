@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+
 import {
   Card,
   CardContent,
@@ -8,14 +10,14 @@ import {
 } from '@/components/ui/Card';
 import type { RenderingStrategiesInfo } from '@/types';
 
-import { ButtonLink } from './ui/ButtonLink';
 import { Separator } from './ui/Separator';
 
 interface Props {
   information: RenderingStrategiesInfo;
+  children?: ReactNode;
 }
 
-const SideDescription = ({ information }: Props) => {
+const SideDescription = ({ information, children }: Props) => {
   const { title, description, pros, cons } = information;
   return (
     <div>
@@ -42,9 +44,7 @@ const SideDescription = ({ information }: Props) => {
               </li>
             ))}
           </ul>
-        </CardContent>
-        <CardFooter className="flex flex-col items-start">
-          <p>TBD</p>
+          <p className="mt-8">TBD</p>
           <Separator />
           <span className="my-2 block w-full  text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -61,9 +61,10 @@ const SideDescription = ({ information }: Props) => {
             ante. Nulla ac nulla at ligula rhoncus porttitor quis at dolor.
             Quisque ut metus eget velit imperdiet faucibus.
           </span>
+        </CardContent>
+        <CardFooter className="flex flex-col items-start">
           <Separator className="mb-3" />
-          <span className="mb-2">Zobacz także</span>
-          <ButtonLink href={`/ssr-streaming`}>Server Side Streaming</ButtonLink>
+          {children}
         </CardFooter>
       </Card>
     </div>
