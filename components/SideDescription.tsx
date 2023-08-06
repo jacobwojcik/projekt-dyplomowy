@@ -19,7 +19,7 @@ const SideDescription = ({ information }: Props) => {
   const { title, description, pros, cons } = information;
   return (
     <div>
-      <Card className="w-[420px]">
+      <Card className="w-full lg:w-[420px]">
         <CardHeader>
           <CardTitle>{title}</CardTitle>
           <CardDescription>{description}</CardDescription>
