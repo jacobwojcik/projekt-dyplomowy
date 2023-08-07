@@ -4,8 +4,8 @@ import { ButtonLink } from './ui/ButtonLink';
 
 const HowToOptimize = () => {
   return (
-    <div className="flex h-[960px] flex-col items-center justify-center ">
-      <h2 className="mb-3 text-3xl font-semibold">
+    <div className="flex h-[660px] flex-col items-center justify-center px-4">
+      <h2 className="mb-3 text-center text-3xl font-semibold">
         Jak optymalizować wydajność strony?
       </h2>
       <span className="mb-12 max-w-[70%] text-center">
@@ -16,10 +16,14 @@ const HowToOptimize = () => {
         dignissim.
       </span>
       <div className="flex gap-6">
-        <ButtonLink href="/bez-optymalizacji">
+        <ButtonLink className="text-sm sm:text-base" href="/bez-optymalizacji">
           Wersja bez optymalizacji
         </ButtonLink>
-        <ButtonLink href="/z-optymalizacja" light>
+        <ButtonLink
+          className="text-sm sm:text-base"
+          href="/z-optymalizacja"
+          light
+        >
           Wersja zoptymalizowana
         </ButtonLink>
       </div>

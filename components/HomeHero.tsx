@@ -1,6 +1,6 @@
 const HomeHero = () => {
   return (
-    <div className="mx-auto flex h-[960px] w-full flex-col items-center justify-center text-center">
+    <div className="mx-auto flex h-[620px] w-full flex-col items-center justify-center px-4 text-center">
       <h1 className="mb-8 text-5xl font-semibold">Witaj przybyszu!</h1>
       <h2 className="max-w-4xl">
         Ta aplikacja to przewodnik, który umożliwia zgłębianie różnych technik

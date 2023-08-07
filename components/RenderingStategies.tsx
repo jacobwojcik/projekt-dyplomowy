@@ -39,22 +39,27 @@ const renderingStrategies: {
 
 const RenderingStategies = () => {
   return (
-    <div className="flex h-[960px] flex-col items-center justify-center bg-zinc-100/50">
-      <h2 className="mb-12 text-3xl font-semibold">Strategie renderowania</h2>
-      <div className="flex gap-6">
+    <div className="flex h-[660px] flex-col items-center justify-center bg-zinc-100/50 px-4">
+      <h2 className="mb-12 text-center text-3xl font-semibold">
+        Strategie renderowania
+      </h2>
+      <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
         {renderingStrategies.map(({ name, href, description }) => (
           <Card
             key={href}
-            className="flex h-[220px] flex-col items-center justify-center gap-4 py-5 text-center sm:w-[220px]"
+            className="flex  h-[180px] flex-col items-center justify-center gap-2 py-5 text-center sm:h-[220px] sm:w-[220px] sm:gap-4"
           >
             <CardHeader className="w-full p-0">
               <CardTitle>{name}</CardTitle>
             </CardHeader>
-            <CardContent className="justify-content flex h-12 flex-col items-center justify-center p-0">
+            <CardContent className="justify-content flex h-12 flex-col items-center justify-center p-0 px-2 text-sm sm:text-base">
               <span>{description}</span>
             </CardContent>
             <CardFooter className="justify-content flex p-0">
-              <ButtonLink href={href}> Zobacz przykład</ButtonLink>
+              <ButtonLink className="text-sm sm:text-base" href={href}>
+                {' '}
+                Zobacz przykład
+              </ButtonLink>
             </CardFooter>
           </Card>
         ))}

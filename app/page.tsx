@@ -6,7 +6,7 @@ export default async function Home() {
   return (
     <main style={{ minHeight: 'calc(100vh - 126px)' }}>
       <HomeHero />
-      <RenderingStategies />]
+      <RenderingStategies />
       <HowToOptimize />
     </main>
   );
