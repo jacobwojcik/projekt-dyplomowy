@@ -1,2 +1,2 @@
-## Praca dyplomowa
+# Jak tworzyć aplikacje webowe?
 
