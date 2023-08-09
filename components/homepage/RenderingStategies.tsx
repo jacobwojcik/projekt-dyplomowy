@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from '@/components/ui/Card';
 
-import { ButtonLink } from './ui/ButtonLink';
+import { ButtonLink } from '../ui/ButtonLink';
 
 const renderingStrategies: {
   name: string;
