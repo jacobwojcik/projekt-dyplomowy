@@ -1,3 +1,5 @@
+import { ButtonLink } from './ui/ButtonLink';
+
 const HomeHero = () => {
   return (
     <div className="mx-auto flex h-[620px] w-full flex-col items-center justify-center px-4 text-center">
@@ -8,6 +10,13 @@ const HomeHero = () => {
         jest zaprezentowanie różnych technik renderowania stron internetowych
         oraz optymalizacji nowoczesnych aplikacji.
       </h2>
+
+      <div className="mt-6 flex gap-6">
+        <ButtonLink href="#rendering">Renderowanie</ButtonLink>
+        <ButtonLink light href="#optymalizacja">
+          Optymalizacja
+        </ButtonLink>
+      </div>
     </div>
   );
 };

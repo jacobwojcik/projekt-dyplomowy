@@ -4,7 +4,10 @@ import { ButtonLink } from './ui/ButtonLink';
 
 const HowToOptimize = () => {
   return (
-    <div className="flex h-[660px] flex-col items-center justify-center px-4">
+    <div
+      className="flex h-[660px] flex-col items-center justify-center px-4"
+      id="optymalizacja"
+    >
       <h2 className="mb-3 text-center text-3xl font-semibold">
         Jak optymalizować wydajność strony?
       </h2>

@@ -39,7 +39,10 @@ const renderingStrategies: {
 
 const RenderingStategies = () => {
   return (
-    <div className="flex h-[660px] flex-col items-center justify-center bg-zinc-100/50 px-4">
+    <div
+      className="flex h-[660px] flex-col items-center justify-center bg-zinc-100/50 px-4"
+      id="rendering"
+    >
       <h2 className="mb-12 text-center text-3xl font-semibold">
         Strategie renderowania
       </h2>
