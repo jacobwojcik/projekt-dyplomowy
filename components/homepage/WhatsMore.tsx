@@ -4,7 +4,7 @@ import LinkCard from '../ui/LinkCard';
 
 const WhatsMore = () => {
   return (
-    <div className="grid h-[660px] grid-cols-2 items-center justify-center gap-6 bg-zinc-100/50 px-4">
+    <div className="grid min-h-[660px]  grid-cols-1 items-center justify-center gap-6 bg-zinc-100/50 px-4 py-8 sm:grid-cols-2 sm:py-0">
       <div className="flex  flex-col items-center">
         <h3 className="mb-3 text-center text-3xl font-semibold">Co więcej?</h3>
         <span className="max-w-md">
@@ -17,7 +17,7 @@ const WhatsMore = () => {
           felis, volutpat in libero in, pharetra eleifend nunc.
         </span>
       </div>
-      <div className="flex justify-around gap-8">
+      <div className="flex flex-col items-center gap-8 md:flex-row">
         <LinkCard href={`/sr-streaming`} title="SR Streaming">
           Dlaczego?
         </LinkCard>

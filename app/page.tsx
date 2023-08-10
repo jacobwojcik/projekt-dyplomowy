@@ -1,13 +1,15 @@
-import HomeHero from '@/components/HomeHero';
-import HowToOptimize from '@/components/HowToOptimize';
-import RenderingStategies from '@/components/RenderingStategies';
+import HomeHero from '@/components/homepage/HomeHero';
+import HowToOptimize from '@/components/homepage/HowToOptimize';
+import RenderingStategies from '@/components/homepage/RenderingStategies';
+import WhatsMore from '@/components/homepage/WhatsMore';
 
 export default async function Home() {
   return (
-    <main style={{ minHeight: 'calc(100vh - 126px)' }}>
+    <main>
       <HomeHero />
       <RenderingStategies />
       <HowToOptimize />
+      <WhatsMore />
     </main>
   );
 }
