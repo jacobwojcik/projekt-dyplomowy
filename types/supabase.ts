@@ -54,21 +54,6 @@ export interface Database {
         };
         Relationships: [];
       };
-      countries: {
-        Row: {
-          id: number;
-          name: string;
-        };
-        Insert: {
-          id?: number;
-          name: string;
-        };
-        Update: {
-          id?: number;
-          name?: string;
-        };
-        Relationships: [];
-      };
       product: {
         Row: {
           category_id: number;
@@ -112,6 +97,33 @@ export interface Database {
           },
         ];
       };
+      todo: {
+        Row: {
+          category: Database['public']['Enums']['category_todo'];
+          created_at: string;
+          dueDate: string | null;
+          id: number;
+          isDone: boolean | null;
+          name: string | null;
+        };
+        Insert: {
+          category?: Database['public']['Enums']['category_todo'];
+          created_at?: string;
+          dueDate?: string | null;
+          id?: number;
+          isDone?: boolean | null;
+          name?: string | null;
+        };
+        Update: {
+          category?: Database['public']['Enums']['category_todo'];
+          created_at?: string;
+          dueDate?: string | null;
+          id?: number;
+          isDone?: boolean | null;
+          name?: string | null;
+        };
+        Relationships: [];
+      };
     };
     Views: {
       [_ in never]: never;
@@ -120,7 +132,7 @@ export interface Database {
       [_ in never]: never;
     };
     Enums: {
-      [_ in never]: never;
+      category_todo: 'Prywatne' | 'Praca' | 'Zdrowie' | 'Podróże';
     };
     CompositeTypes: {
       [_ in never]: never;
