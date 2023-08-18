@@ -3,7 +3,7 @@ import type { Database } from './supabase';
 export type Product = Database['public']['Tables']['product']['Row'];
 export type Category = Database['public']['Tables']['category']['Row'];
 export type Todo = Database['public']['Tables']['todo']['Row'];
-
+export type TodoCategory = Database['public']['Enums']['category_todo'];
 export type ProductInfo = Product & {
   category: { name: string };
 };
@@ -32,4 +32,11 @@ export interface RenderingStrategiesInfo {
   description: string;
   pros: string[];
   cons: string[];
+}
+
+export enum TodoCategoryEnum {
+  Private = 'Prywatne',
+  Work = 'Praca',
+  Health = 'Zdrowie',
+  Travel = 'Podróże',
 }

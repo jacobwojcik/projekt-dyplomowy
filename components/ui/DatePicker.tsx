@@ -14,7 +14,7 @@ import { formatDate } from '@/lib/helpers';
 import { cn } from '@/lib/utils';
 
 interface DatePickerProps {
-  selectedDate: Date | null;
+  selectedDate: string | Date | null;
   onDateChange: (date: Date) => void;
   className?: string;
 }
@@ -42,11 +42,9 @@ export function DatePicker({
       <PopoverContent className="w-auto p-0" align="start">
         <Calendar
           mode="single"
-          selected={selectedDate}
-          onSelect={(date) => onDateChange(date)}
-          disabled={(date) =>
-            date > new Date() || date < new Date('1900-01-01')
-          }
+          selected={selectedDate as Date}
+          onSelect={(date) => onDateChange(date as any)}
+          disabled={(date) => date < new Date()}
           initialFocus
         />
       </PopoverContent>

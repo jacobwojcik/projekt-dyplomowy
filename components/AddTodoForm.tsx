@@ -12,7 +12,8 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/Form';
-import type { Category } from '@/types';
+import { addTodo } from '@/lib/queries/addTodo';
+import { TodoCategoryEnum } from '@/types';
 
 import { Button } from './ui/Button';
 import { DatePicker } from './ui/DatePicker';
@@ -29,28 +30,37 @@ const formSchema = z.object({
   name: z.string().min(2, {
     message: 'Nazwa produktu musi zawierać conajmniej 2 znaki',
   }),
-  category: z.number(),
-  dueDate: z.date(),
+  category: z.nativeEnum(TodoCategoryEnum, {
+    required_error: 'Pole jest wymagane',
+  }),
+  dueDate: z.date({
+    required_error: 'Pole jest wymagane',
+  }),
+  isDone: z.boolean(),
 });
 
-interface Props {
-  options: Category[];
-}
+const todoCategoriesArray = Object.values(TodoCategoryEnum);
 
-const AddProductForm = ({ options }: Props) => {
+const AddProductForm = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: '',
-      price: 0,
-      quantity: 0,
-      category: 0,
-      description: '',
+      category: undefined,
+      dueDate: undefined,
+      isDone: false,
     },
   });
 
-  const onSubmit = (values: z.infer<typeof formSchema>) => {
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
     console.log(values);
+
+    const res = await addTodo({
+      ...values,
+      dueDate: values.dueDate.toDateString(),
+    });
+
+    console.log(res);
   };
   return (
     <div className="w-full p-4">
@@ -94,8 +104,8 @@ const AddProductForm = ({ options }: Props) => {
                   <FormLabel>Kategoria</FormLabel>
                   <FormControl>
                     <Select
-                      onValueChange={(value) => {
-                        form.setValue('category', +value);
+                      onValueChange={(value: TodoCategoryEnum) => {
+                        form.setValue('category', value);
                         field.onChange(value);
                       }}
                     >
@@ -103,9 +113,9 @@ const AddProductForm = ({ options }: Props) => {
                         <SelectValue placeholder="Wybierz kategorię" />
                       </SelectTrigger>
                       <SelectContent>
-                        {options.map(({ id, name }) => (
-                          <SelectItem value={`${id}`} key={name + id}>
-                            {name}
+                        {todoCategoriesArray.map((category) => (
+                          <SelectItem value={category} key={category}>
+                            {category}
                           </SelectItem>
                         ))}
                       </SelectContent>
