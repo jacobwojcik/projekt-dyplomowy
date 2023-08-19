@@ -1,3 +1,5 @@
+import { CheckCircleIcon, XCircleIcon } from '@heroicons/react/24/solid';
+
 import {
   Table,
   TableBody,
@@ -7,7 +9,6 @@ import {
   TableRow,
 } from '@/components/ui/Table';
 import type { Todo } from '@/types';
-import { CheckCircleIcon, XCircleIcon } from '@heroicons/react/24/solid';
 
 interface Props {
   todos: Todo[];
@@ -17,7 +18,7 @@ const tableHeaders = ['Zadanie', 'Kategoria', 'Do kiedy?', 'Wykonane'];
 
 const TodosList = ({ todos }: Props) => {
   return (
-    <Table className="max-w-3xl rounded-lg border">
+    <Table className=" rounded-lg border">
       <TableHeader>
         <TableRow>
           {tableHeaders.map((header, index) => (
@@ -33,7 +34,7 @@ const TodosList = ({ todos }: Props) => {
             <TableCell className="font-medium">{name}</TableCell>
             <TableCell>{category}</TableCell>
             <TableCell>{dueDate}</TableCell>
-            <TableCell className="flex gap-2 items-center">
+            <TableCell className="flex items-center gap-2">
               {isDone ? (
                 <>
                   Tak <CheckCircleIcon className="h-6 w-6 text-green-500" />
