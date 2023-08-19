@@ -5,6 +5,7 @@ import { Montserrat } from 'next/font/google';
 
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import { Toaster } from '@/components/ui/Toaster';
 
 const font = Montserrat({ subsets: ['latin'] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${font.className} min-h-screen`}>
         <Header />
         <main className="">{children}</main>
+        <Toaster />
         <Footer />
       </body>
     </html>

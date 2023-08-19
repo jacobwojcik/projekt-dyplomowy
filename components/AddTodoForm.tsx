@@ -12,7 +12,8 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/Form';
-import { addTodo } from '@/lib/queries/addTodo';
+import { useToast } from '@/lib/hooks';
+import { addTodo } from '@/lib/queries';
 import { TodoCategoryEnum } from '@/types';
 
 import { Button } from './ui/Button';
@@ -42,6 +43,8 @@ const formSchema = z.object({
 const todoCategoriesArray = Object.values(TodoCategoryEnum);
 
 const AddProductForm = () => {
+  const { toast } = useToast();
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -53,14 +56,25 @@ const AddProductForm = () => {
   });
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
-    console.log(values);
+    try {
+      await addTodo({
+        ...values,
+        dueDate: values.dueDate.toDateString(),
+      });
 
-    const res = await addTodo({
-      ...values,
-      dueDate: values.dueDate.toDateString(),
-    });
+      toast({
+        variant: 'success',
+        description: 'Poprawnie dodano nowe zadanie!',
+      });
 
-    console.log(res);
+      form.reset();
+    } catch (e: unknown) {
+      toast({
+        variant: 'destructive',
+        title: 'Coś poszło nie tak!',
+        description: 'Spróbuj ponownie później',
+      });
+    }
   };
   return (
     <div className="w-full p-4">
