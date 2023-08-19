@@ -1,5 +1,5 @@
-import AddTodoSheet from '@/components/AddTodoSheet';
-import TodosList from '@/components/TodosList';
+import AddTodoSheet from '@/components/features/revalidation/AddTodoSheet';
+import TodosList from '@/components/features/revalidation/TodosList';
 import { getTodos } from '@/lib/queries';
 
 export const revalidate = 300;

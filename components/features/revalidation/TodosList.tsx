@@ -7,6 +7,7 @@ import {
   TableRow,
 } from '@/components/ui/Table';
 import type { Todo } from '@/types';
+import { CheckCircleIcon, XCircleIcon } from '@heroicons/react/24/solid';
 
 interface Props {
   todos: Todo[];
@@ -32,7 +33,18 @@ const TodosList = ({ todos }: Props) => {
             <TableCell className="font-medium">{name}</TableCell>
             <TableCell>{category}</TableCell>
             <TableCell>{dueDate}</TableCell>
-            <TableCell>{isDone ? 'tak' : 'nie'}</TableCell>
+            <TableCell className="flex gap-2 items-center">
+              {isDone ? (
+                <>
+                  Tak <CheckCircleIcon className="h-6 w-6 text-green-500" />
+                </>
+              ) : (
+                <>
+                  Nie
+                  <XCircleIcon className="h-6 w-6 text-red-500" />
+                </>
+              )}
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>

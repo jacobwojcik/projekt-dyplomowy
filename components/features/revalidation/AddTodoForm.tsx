@@ -16,16 +16,16 @@ import { addTodoAction } from '@/lib/actions';
 import { useToast } from '@/lib/hooks';
 import { TodoCategoryEnum } from '@/types';
 
-import { Button } from './ui/Button';
-import { DatePicker } from './ui/DatePicker';
-import { Input } from './ui/Input';
+import { Button } from '../../ui/Button';
+import { DatePicker } from '../../ui/DatePicker';
+import { Input } from '../../ui/Input';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from './ui/Select';
+} from '../../ui/Select';
 
 const TodoSchema = z.object({
   name: z.string().min(2, {
