@@ -34,7 +34,7 @@ export function DatePicker({
           {selectedDate ? (
             formatDate(selectedDate.toString())
           ) : (
-            <span>Pick a date</span>
+            <span>Wybierz datę</span>
           )}
           <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
         </Button>
@@ -43,8 +43,9 @@ export function DatePicker({
         <Calendar
           mode="single"
           selected={selectedDate as Date}
-          onSelect={(date) => onDateChange(date as any)}
-          disabled={(date) => date < new Date()}
+          onSelect={(date) => onDateChange(date as Date)}
+          // disable dates before today
+          disabled={(date) => date < new Date(new Date().setHours(0, 0, 0, 0))}
           initialFocus
         />
       </PopoverContent>
