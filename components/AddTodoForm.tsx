@@ -12,8 +12,8 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/Form';
+import { addTodoAction } from '@/lib/actions';
 import { useToast } from '@/lib/hooks';
-import { addTodo } from '@/lib/queries';
 import { TodoCategoryEnum } from '@/types';
 
 import { Button } from './ui/Button';
@@ -27,7 +27,7 @@ import {
   SelectValue,
 } from './ui/Select';
 
-const formSchema = z.object({
+const TodoSchema = z.object({
   name: z.string().min(2, {
     message: 'Nazwa produktu musi zawierać conajmniej 2 znaki',
   }),
@@ -45,8 +45,8 @@ const todoCategoriesArray = Object.values(TodoCategoryEnum);
 const AddProductForm = () => {
   const { toast } = useToast();
 
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof TodoSchema>>({
+    resolver: zodResolver(TodoSchema),
     defaultValues: {
       name: '',
       category: undefined,
@@ -55,9 +55,9 @@ const AddProductForm = () => {
     },
   });
 
-  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+  const clientAction = async (values: z.infer<typeof TodoSchema>) => {
     try {
-      await addTodo({
+      await addTodoAction({
         ...values,
         dueDate: values.dueDate.toDateString(),
       });
@@ -74,12 +74,17 @@ const AddProductForm = () => {
         title: 'Coś poszło nie tak!',
         description: 'Spróbuj ponownie później',
       });
+
+      // eslint-disable-next-line no-console
+      console.error(e);
     }
   };
+
   return (
     <div className="w-full p-4">
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        {/* @ts-ignore next-line */}
+        <form action={form.handleSubmit(clientAction)} className="space-y-8">
           <FormField
             name="name"
             render={({ field }) => (

@@ -6,6 +6,9 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [320, 768, 1200],
   },
+  experimental: {
+    serverActions: true,
+  },
 };
 
 module.exports = nextConfig;
