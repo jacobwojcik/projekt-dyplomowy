@@ -63,10 +63,7 @@ export default async function Page() {
 
       <section className="col-span-3 px-4">
         <h1 className="mb-6 text-lg font-semibold">Wyniki:</h1>
-        <div className="flex w-full justify-center">
-          {/* eslint-disable-next-line jsx-a11y/alt-text */}
-          <img src="/score.png" />
-        </div>
+        <div className="flex w-full justify-center">Coming soon...</div>
       </section>
     </main>
   );
