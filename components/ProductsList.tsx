@@ -1,7 +1,7 @@
 import { formatTime } from '@/lib/helpers';
 import type { ProductInfo, Time } from '@/types';
 
-import ProductItem from './ui/ProductItem';
+import DesignedProductCard from './DesignedProductCard';
 import { Separator } from './ui/Separator';
 
 interface Props {
@@ -17,17 +17,12 @@ const ProductsList = ({ products, currentTime }: Props) => {
       <div className="mb-4 flex flex-row items-center justify-between">
         <h1 className="text-lg font-semibold">Lista produktów</h1>
         <time>{currentTime?.datetime ? time : 'Loading...'}</time>
-
-        {/* <CardDescription>{description}</CardDescription> */}
       </div>
       <Separator />
-      <div>
+      <div className="my-6 grid grid-cols-3 gap-6">
         {products.length ? (
           products.map((product) => (
-            <div key={product.id}>
-              <ProductItem product={product} />
-              <Separator />
-            </div>
+            <DesignedProductCard key={product.id} product={product} />
           ))
         ) : (
           <span>Loading...</span>
