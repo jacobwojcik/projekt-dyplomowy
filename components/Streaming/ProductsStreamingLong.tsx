@@ -1,22 +1,20 @@
 import { getProducts } from '@/lib/queries';
 
-import ProductItem from '../ui/ProductItem';
+import DesignedProductCard from '../DesignedProductCard';
 const delay = async () => {
-  return new Promise((resolve) => setTimeout(resolve, 6000));
+  return new Promise((resolve) => setTimeout(resolve, 3000));
 };
 
-const ProductsStreamingLong = async ({ limit = 8 }) => {
+const ProductsStreamingLong = async () => {
   await delay();
-  const products = await getProducts(limit);
+  const products = await getProducts(3);
+
   return (
-    <div className="w-full">
-      {products.length ? (
+    <div className="my-6 grid grid-cols-3 gap-6">
+      {products.length &&
         products.map((product) => (
-          <ProductItem key={product.id} product={product} />
-        ))
-      ) : (
-        <span>Loading...</span>
-      )}
+          <DesignedProductCard key={product.id} product={product} />
+        ))}
     </div>
   );
 };

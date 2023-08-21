@@ -1,14 +1,14 @@
 import { getProducts } from '@/lib/queries';
 
-import ProductItem from '../ui/ProductItem';
+import DesignedProductCard from '../DesignedProductCard';
 
-const ProductsStreaming = async ({ limit = 8 }) => {
-  const products = await getProducts(limit);
+const ProductsStreaming = async () => {
+  const products = await getProducts(3);
   return (
-    <div className="w-full">
+    <div className="my-6 grid grid-cols-3 gap-6">
       {products.length ? (
         products.map((product) => (
-          <ProductItem key={product.id} product={product} />
+          <DesignedProductCard key={product.id} product={product} />
         ))
       ) : (
         <span>Loading...</span>

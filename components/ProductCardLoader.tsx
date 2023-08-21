@@ -21,7 +21,7 @@ const ProductCardLoader = () => {
         </div>
         <Skeleton className="h-[20px] w-[180px] rounded-full" />
         <div className="flex gap-x-6">
-          <div className="flex">
+          <div className="mt-3 flex">
             <Skeleton className="h-[20px] w-[100px] rounded-full" />
           </div>
         </div>

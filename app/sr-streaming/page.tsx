@@ -3,8 +3,10 @@ import { Suspense } from 'react';
 import SideDescription from '@/components/SideDescription';
 import BlogPosts from '@/components/Streaming/BlogPostsStreaming';
 import CurrentTime from '@/components/Streaming/CurrentTime';
+import ProductListLoader from '@/components/Streaming/ProductListLoader';
 import ProductsStreaming from '@/components/Streaming/ProductsStreaming';
 import ProductsStreamingLong from '@/components/Streaming/ProductsStreamingLong';
+import { Separator } from '@/components/ui/Separator';
 import { renderingStrategiesInfo } from '@/lib/consts/renderingStrategiesInfo';
 
 export default async function Page() {
@@ -16,11 +18,13 @@ export default async function Page() {
           <Suspense>
             <CurrentTime />
           </Suspense>
-          <Suspense fallback={<span>Loading...</span>}>
-            <ProductsStreamingLong limit={2} />
+          <Separator />
+          <Suspense fallback={<ProductListLoader />}>
+            <ProductsStreamingLong />
           </Suspense>
+          <Separator />
           <Suspense>
-            <ProductsStreaming limit={2} />
+            <ProductsStreaming />
           </Suspense>
         </div>
       </div>
