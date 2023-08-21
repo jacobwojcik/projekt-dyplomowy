@@ -1,9 +1,9 @@
 import { Suspense } from 'react';
 
+import ProductListLoader from '@/components/features/loaders/ProductListLoader';
 import SideDescription from '@/components/SideDescription';
 import BlogPosts from '@/components/Streaming/BlogPostsStreaming';
 import CurrentTime from '@/components/Streaming/CurrentTime';
-import ProductListLoader from '@/components/Streaming/ProductListLoader';
 import ProductsStreaming from '@/components/Streaming/ProductsStreaming';
 import ProductsStreamingLong from '@/components/Streaming/ProductsStreamingLong';
 import { Separator } from '@/components/ui/Separator';

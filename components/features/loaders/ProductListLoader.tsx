@@ -1,4 +1,4 @@
-import ProductCardLoader from '../ProductCardLoader';
+import ProductCardLoader from './ProductCardLoader';
 
 interface Props {
   items?: number;
