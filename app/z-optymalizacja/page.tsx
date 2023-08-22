@@ -17,13 +17,6 @@ export default async function Page() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               nulla justo, consectetur sit amet dui ac, ultrices viverra tortor.
               Duis eget rhoncus nulla. Morbi vel nibh et ex sagittis ultrices.
-              Quisque at lectus a erat fringilla placerat vel sed mi. Cras vel
-              purus at enim hendrerit sollicitudin vel et nibh. In ultricies
-              massa purus, vel cursus tellus sagittis sit amet. Nam diam lacus,
-              sodales ut nisl a, tincidunt vulputate diam. Aenean consectetur ac
-              est ac ullamcorper. Praesent dignissim, nibh vitae dignissim
-              rutrum, est magna ultricies eros, quis maximus nibh nulla gravida
-              nibh.
             </span>
           </div>
           <div className="col-span-2 mx-auto flex w-2/3 flex-col items-center justify-center gap-6">
