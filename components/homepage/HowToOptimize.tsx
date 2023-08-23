@@ -12,11 +12,13 @@ const HowToOptimize = () => {
         Jak optymalizować wydajność strony?
       </h2>
       <span className="mb-12 max-w-[70%] text-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis
-        tristique est eget faucibus. Mauris interdum nisl vulputate risus
-        maximus ultricies. Proin a luctus mi. Sed orci felis, volutpat quis
-        finibus quis, dignissim sed mauris. Curabitur non diam et orci rutrum
-        dignissim.
+        W dzisiejszym zdominowanym przez wyszukiwarki świecie, dobrze
+        przemyślana strategia SEO jest nie tylko narzędziem do osiągnięcia
+        wyższej pozycji w wynikach wyszukiwania, lecz także kluczem do zdobycia
+        zaufania użytkowników. Poprzez optymalizację treści, struktury i
+        technicznych aspektów witryny, można nie tylko zwiększyć jej widoczność,
+        ale również skonstruować solidne fundamenty dla długoterminowego sukcesu
+        w świecie online.
       </span>
       <div className="flex gap-6">
         <ButtonLink className="text-sm sm:text-base" href="/bez-optymalizacji">

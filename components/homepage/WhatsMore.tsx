@@ -8,13 +8,12 @@ const WhatsMore = () => {
       <div className="flex  flex-col items-center">
         <h3 className="mb-3 text-center text-3xl font-semibold">Co więcej?</h3>
         <span className="max-w-md">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-          vestibulum justo vel commodo sodales. Integer vitae suscipit nulla,
-          vitae vehicula mauris. Duis fermentum, sapien id dictum placerat, eros
-          massa ultrices neque, eu placerat enim quam eget sapien. Aenean
-          egestas nisl sed bibendum gravida. Cras et egestas odio. Sed ac est
-          rutrum, sodales augue et, hendrerit ante. Nulla facilisi. Morbi mi
-          felis, volutpat in libero in, pharetra eleifend nunc.
+          Po wprowadzeniu Server Componenets oraz Next'a w wersji 13, budowanie
+          wydajnych interaktywnych stron stało się jeszcze prostsze. Server
+          Streaming, wydajniejsza rewalidacja statycznych stron czy Server
+          Actions to tylko niektore z wprowadzonych nowości. Zostały one z
+          entuzjazmem przyjęte przez &quot;webową&quot; społeczność, jak
+          dokładnie działają?
         </span>
       </div>
       <div className="flex flex-col items-center gap-8 md:flex-row">
