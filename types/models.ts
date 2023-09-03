@@ -30,8 +30,8 @@ export interface Time {
 export interface RenderingStrategiesInfo {
   title: string;
   description: string;
-  pros: string[];
-  cons: string[];
+  pros?: string[];
+  cons?: string[];
 }
 
 export enum TodoCategoryEnum {

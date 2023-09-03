@@ -27,25 +27,35 @@ const SideDescription = ({ information, children }: Props) => {
           <CardDescription>{description}</CardDescription>
         </CardHeader>
         <CardContent>
-          <p>Korzyści:</p>
-          <ul className="ml-6 list-disc">
-            {pros?.map((item, index) => (
-              <li key={index} className="text-xs">
-                {item}
-              </li>
-            ))}
-          </ul>
+          {pros && (
+            <>
+              <p>Korzyści:</p>
+              <ul className="ml-6 list-disc">
+                {pros?.map((item, index) => (
+                  <li key={index} className="text-xs">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
 
-          <p>Wady:</p>
-          <ul className="ml-6 list-disc">
-            {cons?.map((item, index) => (
-              <li key={index} className="text-xs">
-                {item}
-              </li>
-            ))}
-          </ul>
+          {cons && (
+            <>
+              <p>Wady:</p>
+              <ul className="ml-6 list-disc">
+                {cons?.map((item, index) => (
+                  <li key={index} className="text-xs">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+
           <p className="mt-8">TBD</p>
           <Separator />
+
           <span className="my-2 block w-full  text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
             mollis tristique est eget faucibus. Mauris interdum nisl vulputate

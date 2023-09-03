@@ -1,9 +1,4 @@
-export interface RenderingStrategiesInfo {
-  title: string;
-  description: string;
-  pros: string[];
-  cons: string[];
-}
+import type { RenderingStrategiesInfo } from '@/types';
 
 export const renderingStrategiesInfo: Record<string, RenderingStrategiesInfo> =
   {
@@ -64,3 +59,12 @@ export const renderingStrategiesInfo: Record<string, RenderingStrategiesInfo> =
       ],
     },
   };
+
+export const nextFeaturesInfo: Record<string, RenderingStrategiesInfo> = {
+  streaming: {
+    title: 'Streaming + Suspense',
+    description: `Streaming umożliwia częściowe renderowanie i przesyłanie elementów interfejsu użytkownika z serwera do klienta. W rezultacie użytkownik może natychmiastowo zobaczyć i korzystać z kluczowych fragmentów strony, podczas gdy pozostała treść jest nadal ładowana. To pozwala uniknąć oczekiwania na pełne załadowanie całej strony przed możliwością interakcji. 
+      W tym przypadku czas pobierania produktów z drugiego rzędu jest sztucznie wydłuony, korzystajac z "streamingu" użytkownik nie musi czekać aż to żądanie zostanie zakończone!!
+      `,
+  },
+};
