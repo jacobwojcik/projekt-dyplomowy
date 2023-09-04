@@ -18,13 +18,13 @@ interface Props {
 }
 
 const SideDescription = ({ information, children }: Props) => {
-  const { title, description, pros, cons } = information;
+  const { title, description, pros, cons, content } = information;
   return (
     <div>
       <Card className="w-full lg:w-[420px]">
         <CardHeader>
-          <CardTitle>{title}</CardTitle>
-          <CardDescription>{description}</CardDescription>
+          <CardTitle className="mb-4">{title}</CardTitle>
+          <CardDescription className="text-base">{description}</CardDescription>
         </CardHeader>
         <CardContent>
           {pros && (
@@ -53,27 +53,17 @@ const SideDescription = ({ information, children }: Props) => {
             </>
           )}
 
-          <p className="mt-8">TBD</p>
-          <Separator />
-
-          <span className="my-2 block w-full  text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            mollis tristique est eget faucibus. Mauris interdum nisl vulputate
-            risus maximus ultricies. Proin a luctus mi. Sed orci felis, volutpat
-            quis finibus quis, dignissim sed mauris. Curabitur non diam et orci
-            rutrum dignissim. Cras sapien magna, mattis et magna nec, pharetra
-            faucibus dolor. In hac habitasse platea dictumst. Vestibulum non
-            lacus ultrices, pretium orci eu, eleifend turpis. Praesent pulvinar
-            tempus turpis, in pharetra ex venenatis at. Phasellus tincidunt
-            risus tortor, ac efficitur lectus lacinia eget. Proin molestie
-            venenatis purus, ac ultricies massa iaculis ut. In commodo tortor
-            non ante euismod, nec imperdiet lorem ultricies. Morbi at lectus
-            ante. Nulla ac nulla at ligula rhoncus porttitor quis at dolor.
-            Quisque ut metus eget velit imperdiet faucibus.
-          </span>
+          {content && (
+            <>
+              <Separator />
+              <div
+                className="mt-4 "
+                dangerouslySetInnerHTML={{ __html: content }}
+              />
+            </>
+          )}
         </CardContent>
         <CardFooter className="flex flex-col items-start">
-          <Separator className="mb-3" />
           {children}
         </CardFooter>
       </Card>

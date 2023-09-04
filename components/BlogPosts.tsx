@@ -12,7 +12,7 @@ interface Props {
 
 const BlogPosts = ({ blogPosts }: Props) => {
   return (
-    <ScrollArea className="px-6">
+    <ScrollArea className="px-6 lg:px-0">
       <div className="my-6 flex h-[220px] w-full space-x-4 pb-4">
         {blogPosts.length
           ? blogPosts.map((blog) => (

@@ -5,7 +5,7 @@ import DesignedProductCard from '../DesignedProductCard';
 const ProductsStreaming = async () => {
   const products = await getProducts(3);
   return (
-    <div className="my-6 grid grid-cols-3 gap-6">
+    <div className="my-6 grid grid-cols-1 gap-6 sm:grid-cols-3">
       {products.length ? (
         products.map((product) => (
           <DesignedProductCard key={product.id} product={product} />

@@ -30,6 +30,7 @@ export interface Time {
 export interface RenderingStrategiesInfo {
   title: string;
   description: string;
+  content?: string;
   pros?: string[];
   cons?: string[];
 }

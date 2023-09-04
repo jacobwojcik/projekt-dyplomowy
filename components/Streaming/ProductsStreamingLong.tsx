@@ -10,7 +10,7 @@ const ProductsStreamingLong = async () => {
   const products = await getProducts(3);
 
   return (
-    <div className="my-6 grid grid-cols-3 gap-6">
+    <div className="my-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
       {products.length &&
         products.map((product) => (
           <DesignedProductCard key={product.id} product={product} />

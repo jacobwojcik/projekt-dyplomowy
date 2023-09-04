@@ -64,7 +64,8 @@ export const nextFeaturesInfo: Record<string, RenderingStrategiesInfo> = {
   streaming: {
     title: 'Streaming + Suspense',
     description: `Streaming umożliwia częściowe renderowanie i przesyłanie elementów interfejsu użytkownika z serwera do klienta. W rezultacie użytkownik może natychmiastowo zobaczyć i korzystać z kluczowych fragmentów strony, podczas gdy pozostała treść jest nadal ładowana. To pozwala uniknąć oczekiwania na pełne załadowanie całej strony przed możliwością interakcji. 
-      W tym przypadku czas pobierania produktów z drugiego rzędu jest sztucznie wydłuony, korzystajac z "streamingu" użytkownik nie musi czekać aż to żądanie zostanie zakończone!!
+      W tym przypadku czas pobierania produktów z drugiego rzędu jest sztucznie wydłuony, korzystajac z "streamingu" użytkownik nie musi czekać aż to żądanie zostanie zakończone!
       `,
+    content: `<span><code class='bg-zinc-100/50 text-green-500 text-sm py-1 px-2 rounded-lg'>&lt;Suspense&gt;</code> działa poprzez owrapowanie komponentu, który wykonuje asynchroniczną akcję (np. pobieranie danych), prezentując jednocześnie interfejs zastępczy - loader - podczas trwania akcji, po czym automatycznie zamienia się na właściwy komponent po jej zakończeniu.</span>`,
   },
 };

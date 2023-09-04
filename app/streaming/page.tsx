@@ -12,7 +12,7 @@ import { nextFeaturesInfo } from '@/lib/consts/renderingStrategiesInfo';
 export default async function Page() {
   return (
     <div className="mx-auto my-6 max-w-7xl">
-      <div className="flex gap-8">
+      <div className="mx-6 flex flex-col gap-8 lg:flex-row xl:mx-0">
         <SideDescription information={nextFeaturesInfo.streaming} />
         <div>
           <Suspense>
