@@ -1,11 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/Card';
-import { Separator } from '@/components/ui/Separator';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 
 const RevalidationInfo = () => {
   return (
@@ -14,29 +7,20 @@ const RevalidationInfo = () => {
         <CardTitle>Statyczne generowanie a rewalidacja</CardTitle>
       </CardHeader>
       <CardContent>
-        <p>TBD</p>
-
-        <Separator />
-        <span className="my-2 block w-full  text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis
-          tristique est eget faucibus. Mauris interdum nisl vulputate risus
-          maximus ultricies. Proin a luctus mi. Sed orci felis, volutpat quis
-          finibus quis, dignissim sed mauris. Curabitur non diam et orci rutrum
-          dignissim. Cras sapien magna, mattis et magna nec, pharetra faucibus
-          dolor. In hac habitasse platea dictumst. Vestibulum non lacus
-          ultrices, pretium orci eu, eleifend turpis. Praesent pulvinar tempus
-          turpis, in pharetra ex venenatis at. Phasellus tincidunt risus tortor,
-          ac efficitur lectus lacinia eget. Proin molestie venenatis purus, ac
-          ultricies massa iaculis ut. In commodo tortor non ante euismod, nec
-          imperdiet lorem ultricies. Morbi at lectus ante. Nulla ac nulla at
-          ligula rhoncus porttitor quis at dolor. Quisque ut metus eget velit
-          imperdiet faucibus.
-        </span>
+        Aktualna podstrona łączy w sobie statyczną naturę z dynamicznymi
+        możliwościami odświeżania treści. Strona jest regenerowana co 5 minut
+        jak w przypadku ISR. Jednak w tym wypadku po dodaniu nowego zadania
+        użytkownik nie zobaczy nowej treśći!
+        <br />
+        <br />Z pomocą przychodzi funkcja
+        <code className="rounded-lg bg-zinc-100/50 px-2 py-1 text-sm text-green-500">
+          &lt;revalidatePath&gt;
+        </code>{' '}
+        dzięki której mamy zdolność do natychmiastowej rewalidacji danych na
+        żądanie. Dzięki temu, kiedy nowe zadania są dodawane, strona od razu
+        poddawana jest procesowi rewalidacji, a zmiany stają się widoczne dla
+        użytkowników niemalże natychmiastowo.
       </CardContent>
-      <CardFooter className="flex flex-col items-start">
-        <Separator className="mb-3" />
-        TBD
-      </CardFooter>
     </Card>
   );
 };

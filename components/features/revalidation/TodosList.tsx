@@ -22,7 +22,10 @@ const TodosList = ({ todos }: Props) => {
       <TableHeader>
         <TableRow>
           {tableHeaders.map((header, index) => (
-            <TableHead key={index} className="w-[100px]">
+            <TableHead
+              key={index}
+              className="w-[75px] px-1 sm:w-[100px] sm:px-4"
+            >
               {header}
             </TableHead>
           ))}
@@ -31,7 +34,7 @@ const TodosList = ({ todos }: Props) => {
       <TableBody>
         {todos.map(({ id, name, category, dueDate, isDone }) => (
           <TableRow key={id}>
-            <TableCell className="font-medium">{name}</TableCell>
+            <TableCell className="px-2 font-medium sm:px-4">{name}</TableCell>
             <TableCell>{category}</TableCell>
             <TableCell>{dueDate}</TableCell>
             <TableCell className="flex items-center gap-2">
