@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 
 const RevalidationInfo = () => {
   return (
-    <Card className="mx-4 mt-6 max-w-7xl ">
+    <Card className="mx-4 my-6 max-w-7xl ">
       <CardHeader>
         <CardTitle>Statyczne generowanie a rewalidacja</CardTitle>
       </CardHeader>

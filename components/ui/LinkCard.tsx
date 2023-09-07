@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import React from 'react';
@@ -5,18 +6,29 @@ import React from 'react';
 interface Props {
   href: string;
   title: string;
+  imageUrl: string;
   children?: ReactNode;
 }
 
-const LinkCard = ({ href, title, children }: Props) => {
+const LinkCard = ({ href, title, imageUrl, children }: Props) => {
   return (
     <Link
       className="subheading-anchor font-medium"
       aria-label="Link to section"
       href={href}
     >
-      <div className="relative w-[230px] rounded-lg border bg-white p-6 shadow-md transition-shadow hover:shadow-lg">
-        <div className="flex flex-col justify-between space-y-4">
+      <div className="relative  w-full rounded-lg border bg-white shadow-md  duration-200 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-lg sm:w-[340px]">
+        <div className="relative h-[220px] w-full">
+          <Image
+            fill
+            objectFit="cover"
+            objectPosition="top center"
+            src={imageUrl}
+            alt={title}
+            className="border-b border-zinc-300"
+          />
+        </div>
+        <div className="flex flex-col justify-between space-y-4 p-6">
           <div className="space-y-2 [&amp;>h3]:!mt-0 [&amp;>h4]:!mt-0 [&amp;>p]:text-muted-foreground">
             <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
               {title}

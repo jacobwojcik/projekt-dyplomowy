@@ -3,12 +3,16 @@ import { ButtonLink } from '../ui/ButtonLink';
 const HomeHero = () => {
   return (
     <div className="mx-auto flex h-[620px] w-full flex-col items-center justify-center px-4 text-center">
-      <h1 className="mb-8 text-5xl font-semibold">Witaj przybyszu!</h1>
+      <h1 className="mb-8 text-5xl font-semibold">
+        Next.js, czyli web w nowoczesnym wydaniu
+      </h1>
       <h2 className="max-w-4xl">
-        Ta aplikacja to przewodnik, który umożliwia zgłębianie różnych technik
-        renderowania i strategii optymalizacji w Next.js. Celem tej aplikacji
-        jest zaprezentowanie różnych technik renderowania stron internetowych
-        oraz optymalizacji nowoczesnych aplikacji.
+        Next.js to nowoczesny, elastyczny framework Reacta do budowania
+        aplikacji internetowych. Niezależnie od tego, czy budujesz prostą
+        stronę, czy zaawansowaną aplikację, ten framework oferuje narzędzia,
+        które umożliwiają efektywne wykorzystanie jego potencjału. Poniżej
+        znajdziesz przykłady rozwiązań, które pokażą Ci, jak w pełni wykorzystać
+        możliwości Next.js w praktyce.
       </h2>
 
       <div className="mt-6 flex gap-6">
