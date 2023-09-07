@@ -27,8 +27,8 @@ const RenderingPage = ({
   children,
 }: Props) => {
   return (
-    <div className="my-6">
-      <div className="mx-4 flex flex-col gap-8 lg:flex-row">
+    <div className="mx-auto my-6 max-w-7xl">
+      <div className="mx-6 flex flex-col gap-8 lg:flex-row 2xl:mx-0">
         <SideDescription information={information}> {children}</SideDescription>
         <ProductsList products={products} currentTime={currentTime} />
       </div>

@@ -49,7 +49,7 @@ const RenderingStategies = () => {
       <span className="mb-12 max-w-[70%] text-center">
         W erze Next.js 12 wyrózniamy 4 główne strategie renderowania
       </span>
-      <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+      <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
         {renderingStrategies.map(({ name, href, description }) => (
           <Card
             key={href}

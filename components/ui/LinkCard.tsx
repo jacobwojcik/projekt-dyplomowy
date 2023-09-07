@@ -13,16 +13,16 @@ interface Props {
 const LinkCard = ({ href, title, imageUrl, children }: Props) => {
   return (
     <Link
-      className="subheading-anchor font-medium"
+      className="subheading-anchor w-full font-medium sm:w-[340px]"
       aria-label="Link to section"
       href={href}
     >
-      <div className="relative  w-full rounded-lg border bg-white shadow-md  duration-200 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-lg sm:w-[340px]">
+      <div className="relative  w-full rounded-lg border bg-white shadow-md  duration-200 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-lg">
         <div className="relative h-[220px] w-full">
           <Image
             fill
             objectFit="cover"
-            objectPosition="top center"
+            objectPosition="top left"
             src={imageUrl}
             alt={title}
             className="border-b border-zinc-300"
