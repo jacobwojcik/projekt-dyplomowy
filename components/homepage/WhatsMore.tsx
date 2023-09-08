@@ -4,10 +4,10 @@ import LinkCard from '../ui/LinkCard';
 
 const WhatsMore = () => {
   return (
-    <div className="grid min-h-[660px] grid-cols-1 items-center justify-center gap-6 px-6 py-8 sm:py-0 md:grid-cols-2 md:px-32">
+    <div className="grid min-h-[660px] grid-cols-1 items-center justify-center gap-6 px-6 py-8 lg:grid-cols-2 lg:px-32 lg:py-0">
       <div className="flex flex-col items-center">
         <h3 className="mb-3 text-center text-3xl font-semibold">Co więcej?</h3>
-        <span className="max-w-md">
+        <span className="lg:max-w-md">
           Po wprowadzeniu komponentów serwerowych oraz Next&apos;a w wersji 13,
           budowanie wydajnych interaktywnych stron stało się jeszcze prostsze.
           Streaming, wydajniejsza rewalidacja statycznych stron czy &quot;Server
