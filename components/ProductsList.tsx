@@ -1,4 +1,4 @@
-import { formatTime } from '@/lib/helpers';
+import { formatTime, setTimezone } from '@/lib/helpers';
 import type { ProductInfo, Time } from '@/types';
 
 import DesignedProductCard from './DesignedProductCard';
@@ -12,7 +12,8 @@ interface Props {
 }
 
 const ProductsList = ({ products, currentTime }: Props) => {
-  const time = formatTime(currentTime.datetime);
+  const polishTime = setTimezone(currentTime.datetime);
+  const time = formatTime(polishTime);
 
   return (
     <div className="w-full">
