@@ -7,7 +7,7 @@ const delay = async () => {
 
 const ProductsStreamingLong = async () => {
   await delay();
-  const products = await getProducts(3);
+  const products = await getProducts(3, 3);
 
   return (
     <div className="my-6 grid grid-cols-1 sm:grid-cols-3 gap-6">

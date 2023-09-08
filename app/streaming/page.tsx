@@ -19,7 +19,7 @@ export default async function Page() {
             <CurrentTime />
           </Suspense>
           <Separator />
-          <Suspense>
+          <Suspense fallback={<ProductListLoader />}>
             <ProductsStreaming />
           </Suspense>
           <Separator />
