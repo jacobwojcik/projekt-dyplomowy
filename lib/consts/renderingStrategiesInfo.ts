@@ -5,7 +5,7 @@ export const renderingStrategiesInfo: Record<string, RenderingStrategiesInfo> =
     ssr: {
       title: 'SSR - Server Side Rendering',
       description:
-        'Server Side Rendering (SSR), czyli renderowanie po stronie serwera, to technika pozwalająca na generowanie pełnych stron internetowych na serwerze, przed ich dostarczeniem do przeglądarki klienta. W przypadku użycia Next.js, SSR może być osiągnięte w prosty sposób dzięki wbudowanym funkcjom frameworku.',
+        'Server Side Rendering (SSR), czyli renderowanie po stronie serwera, to technika pozwalająca na generowanie pełnych stron internetowych na serwerze, przed ich dostarczeniem do przeglądarki klienta. W przypadku użycia Next.js, SSR może być osiągnięte w prosty sposób dzięki wbudowanym funkcjom frameworku. W tym przypadku żądania również rozwiązywane są dynamicznie, ale po stronie serwera i przed załadowaniem strony. Widoczna godzina to czas załadowania strony.',
       pros: [
         'Optymalizacja czasu ładowania',
         'Lepsze wsparcie dla SEO',
@@ -20,7 +20,7 @@ export const renderingStrategiesInfo: Record<string, RenderingStrategiesInfo> =
     csr: {
       title: 'CSR - Client Side Rendering',
       description:
-        'Client-Side Rendering (CSR), czyli renderowanie po stronie klienta, to technika generowania stron internetowych, w której większość procesu renderowania odbywa się po stronie przeglądarki klienta, a nie na serwerze. W przeciwnym razie, w przypadku Server-Side Rendering (SSR), strony są generowane w całości na serwerze i dostarczane do przeglądarki klienta jako gotowy HTML.',
+        'Client-Side Rendering (CSR), czyli renderowanie po stronie klienta, to technika generowania stron internetowych, w której większość procesu renderowania odbywa się po stronie przeglądarki klienta, a nie na serwerze. W przeciwnym razie, w przypadku Server-Side Rendering (SSR), strony są generowane w całości na serwerze i dostarczane do przeglądarki klienta jako gotowy HTML. Zwróć uwagę na wyświetlaną godzinę, jest to czas w którym zostały zwrócone informacje na stronie. Moesz równie zauważyć, że dane ładowane są po wejściu na  stronę (żądania można podejrzeć w zakładce Network przeglądarki)',
       pros: [
         'Interaktywność',
         'Separacja logiki frontendu i backendu:',
@@ -29,13 +29,13 @@ export const renderingStrategiesInfo: Record<string, RenderingStrategiesInfo> =
       cons: [
         'Wydajność pierwszego ładowania',
         'SEO',
-        'ZWydajność na urządzeniach mobilnych',
+        'Wydajność na urządzeniach mobilnych',
       ],
     },
     ssg: {
       title: 'SSG - Static Site Generation',
       description:
-        'Static Site Generation (SSG) to technika, która umożliwia generowanie pełnych stron internetowych na serwerze w trakcie procesu budowania strony, przed jej dostarczeniem do przeglądarki klienta. W przypadku użycia frameworku Next.js, statyczne generowanie stron może być osiągnięte w prosty sposób dzięki wbudowanym funkcjom tego frameworku.',
+        'Static Site Generation (SSG) to technika, która umożliwia generowanie pełnych stron internetowych na serwerze w trakcie procesu budowania strony, przed jej dostarczeniem do przeglądarki klienta. Strona jest w pełni statyczna, to znaczy, że dane widoczne na niej zasoby zostały pobrane podczas jej generowania. Widoczny czas to godzina wygenerowania strony. SSG jest idealny do stron które sie nie zmieniają i cała zawartość może być  wygenerowana w momencie budowania projektu.',
       pros: ['Wydajność', 'Bezpieczeństwo', 'Optymalizacja dla SEO'],
       cons: [
         'Czas generowania',
@@ -46,16 +46,16 @@ export const renderingStrategiesInfo: Record<string, RenderingStrategiesInfo> =
     isr: {
       title: 'Incremental Static Regeneration',
       description:
-        'Incremental Static Regeneration (ISR), czyli Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id metus ipsum. Quisque condimentum libero ac pretium facilisis. Integer consectetur egestas purus, eu rhoncus ligula eleifend et. Duis accumsan pharetra cursus. Etiam tempus neque dolor, ac condimentum ante scelerisque vitae. In posuere ultricies tincidunt.',
+        'Incremental Static Regeneration (ISR), czyli ulepszone SSG. Jest to metoda, która umożliwia generowanie i regenerację statycznych stron internetowych. Ma znaczącą przewagę nad stronami w pełni statycznymi ponieważ, dane mogę być odświeżane co pewien czas. W tym przypadku można zauważyć, że czas jest regenrowany co 30 sekund. Spróbuj odświeźyć stronę, aby zobaczyć aktualny czas. ISR często wykorzystywane jest na stronach na których treśći odświeżane są co pewien, określony czas , np. wpisy na blogu.',
       pros: [
         'Łączy w sobie zalety SSR i SSG',
-        'OPtymalizacja SEO',
+        'Optymalizacja SEO',
         'Czas ładowania',
       ],
       cons: [
         'Brak aktualnych zasobów',
-        'Dłuższy czad generowania',
-        'Mniejsza interkatywność',
+        'Dłuższy czas generowania',
+        'Mniejsza interaktywność',
       ],
     },
   };

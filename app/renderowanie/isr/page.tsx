@@ -1,4 +1,5 @@
 import RenderingPage from '@/components/RenderingPage';
+import { ButtonLink } from '@/components/ui/ButtonLink';
 import { renderingStrategiesInfo } from '@/lib/consts/renderingStrategiesInfo';
 import { getBlogPosts, getProducts } from '@/lib/queries';
 import { getCurrentTime } from '@/lib/utils';
@@ -22,6 +23,13 @@ export default async function Page() {
       products={products}
       currentTime={currentTime}
       blogPosts={blogPosts}
-    />
+    >
+      <>
+        <span className="mb-2">Zobacz także:</span>
+        <ButtonLink href={`/rewalidacja`}>
+          Rewalidacja statycznych treści
+        </ButtonLink>
+      </>
+    </RenderingPage>
   );
 }

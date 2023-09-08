@@ -19,8 +19,8 @@ export default async function Page() {
       blogPosts={blogPosts}
     >
       <>
-        <span className="mb-2">Zobacz także</span>
-        <ButtonLink href={`/ssr-streaming`}>Server Side Streaming</ButtonLink>
+        <span className="mb-2">Zobacz także:</span>
+        <ButtonLink href={`/streaming`}>Streaming + Suspense</ButtonLink>
       </>
     </RenderingPage>
   );
