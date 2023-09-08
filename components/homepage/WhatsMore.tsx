@@ -4,8 +4,8 @@ import LinkCard from '../ui/LinkCard';
 
 const WhatsMore = () => {
   return (
-    <div className="grid min-h-[660px] grid-cols-1 items-center justify-center gap-6 px-6 py-8 sm:grid-cols-3 sm:py-0">
-      <div className="col-span-1 flex flex-col items-center">
+    <div className="grid min-h-[660px] grid-cols-1 items-center justify-center gap-6 px-6 py-8 sm:py-0 md:grid-cols-2 md:px-32">
+      <div className="flex flex-col items-center">
         <h3 className="mb-3 text-center text-3xl font-semibold">Co więcej?</h3>
         <span className="max-w-md">
           Po wprowadzeniu komponentów serwerowych oraz Next&apos;a w wersji 13,
@@ -16,7 +16,7 @@ const WhatsMore = () => {
           dokładnie działają?
         </span>
       </div>
-      <div className="col-span-2 flex flex-col items-center justify-center gap-8 py-6 md:flex-row">
+      <div className="flex flex-col items-center justify-center gap-8 py-6 md:flex-row">
         <LinkCard
           href={`/streaming`}
           title="Streaming"

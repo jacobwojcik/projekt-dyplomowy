@@ -18,7 +18,7 @@ const LinkCard = ({ href, title, imageUrl, children }: Props) => {
       href={href}
     >
       <div className="relative  w-full rounded-lg border bg-white shadow-md  duration-200 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-lg">
-        <div className="relative h-[220px] w-full">
+        <div className="relative h-[180px] w-full">
           <Image
             fill
             objectFit="cover"

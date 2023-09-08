@@ -11,7 +11,7 @@ const HowToOptimize = () => {
       <h2 className="mb-3 text-center text-3xl font-semibold">
         Jak optymalizować wydajność strony?
       </h2>
-      <span className="mb-12 max-w-[70%] text-center">
+      <span className="mb-12 text-center sm:max-w-[70%]">
         W dzisiejszym zdominowanym przez wyszukiwarki świecie, dobrze
         przemyślana strategia SEO jest nie tylko narzędziem do osiągnięcia
         wyższej pozycji w wynikach wyszukiwania, lecz także kluczem do zdobycia

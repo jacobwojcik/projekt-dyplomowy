@@ -46,7 +46,7 @@ const RenderingStategies = () => {
       <h2 className="mb-12 text-center text-3xl font-semibold">
         Strategie renderowania
       </h2>
-      <span className="mb-12 max-w-[70%] text-center">
+      <span className="mb-12 text-center sm:max-w-[70%]">
         W erze Next.js 12 wyrózniamy 4 główne strategie renderowania
       </span>
       <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
