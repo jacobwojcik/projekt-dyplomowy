@@ -23,9 +23,9 @@ export default async function Page() {
             {/* eslint-disable-next-line jsx-a11y/alt-text */}
             <Image
               className="rounded-lg"
-              src="https://mangools.com/blog/wp-content/uploads/2019/07/learn-seo-new-t.png"
-              width={560}
-              height={300}
+              src="https://www.transparentpng.com/download/seo-png/seo-free-download-4.png"
+              width={350}
+              height={180}
               alt={'Hero image'}
             ></Image>
           </div>

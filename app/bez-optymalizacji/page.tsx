@@ -36,8 +36,8 @@ export default async function Page() {
             {/* eslint-disable-next-line jsx-a11y/alt-text */}
             <img
               className="rounded-lg"
-              src="https://mangools.com/blog/wp-content/uploads/2019/07/learn-seo-new-t.png"
-              width={560}
+              src="https://www.transparentpng.com/download/seo-png/seo-free-download-4.png"
+              width={350}
             ></img>
           </div>
         </div>
