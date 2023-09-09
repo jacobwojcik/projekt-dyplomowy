@@ -1,11 +1,15 @@
-import { Roboto } from 'next/font/google';
+import { Roboto_Mono } from 'next/font/google';
 
-const font = Roboto({ weight: '400', subsets: ['latin'] });
+const robotoFont = Roboto_Mono({
+  subsets: ['latin'],
+  variable: '--font-roboto-mono',
+  display: 'swap',
+});
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <main className={font.className}>{children}</main>
+      <main className={robotoFont.className}>{children}</main>
     </>
   );
 }

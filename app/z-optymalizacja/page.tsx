@@ -10,23 +10,23 @@ export default async function Page() {
       <div className="mx-4 flex flex-col gap-6 md:col-span-1">
         <div className="grid w-full grid-cols-1 rounded-lg border border-zinc-200 p-4 text-center md:grid-cols-3">
           <div className="col-span-1">
-            <h1 className="font-roboto mb-2 text-2xl font-semibold">
-              Z optymalizacją
+            <h1 className="mb-2 text-2xl font-semibold">
+              Jak zoptymalizować stronę?
             </h1>
-            <span className=" text-xs sm:text-base">
+            <span className="text-xs sm:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               nulla justo, consectetur sit amet dui ac, ultrices viverra tortor.
               Duis eget rhoncus nulla. Morbi vel nibh et ex sagittis ultrices.
             </span>
           </div>
           <div className="col-span-2 mx-auto flex w-2/3 flex-col items-center justify-center gap-6">
-            {/* eslint-disable-next-line jsx-a11y/alt-text */}
             <Image
               className="rounded-lg"
               src="https://www.transparentpng.com/download/seo-png/seo-free-download-4.png"
               width={350}
               height={180}
               alt={'Hero image'}
+              priority
             ></Image>
           </div>
         </div>

@@ -12,14 +12,12 @@ export const metadata: Metadata = {
 
 export default async function Page() {
   return (
-    <main className="mx-auto my-6 max-w-7xl">
+    <main className="mx-auto my-6 max-w-7xl font-roboto">
       <div className="mx-4 flex flex-col gap-6 md:col-span-1">
         <div className="grid w-full grid-cols-1 rounded-lg border border-zinc-200 p-4 text-center md:grid-cols-3">
           <div className="col-span-1">
-            <h1 className="font-roboto mb-2 text-2xl font-semibold">
-              Bez optymalizacji
-            </h1>
-            <span className="font-roboto text-xs sm:text-base">
+            <h1 className="mb-2 text-2xl font-semibold">Bez optymalizacji</h1>
+            <span className="text-xs sm:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               nulla justo, consectetur sit amet dui ac, ultrices viverra tortor.
               Duis eget rhoncus nulla. Morbi vel nibh et ex sagittis ultrices.
