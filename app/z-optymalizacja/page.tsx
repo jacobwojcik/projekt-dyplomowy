@@ -1,44 +1,48 @@
 import Image from 'next/image';
-import { Suspense } from 'react';
 
-import BlogPosts from '@/components/Streaming/BlogPostsStreaming';
-import ListStreaming from '@/components/Streaming/ListStreaming';
+export const dynamic = 'force-static';
 
 export default async function Page() {
   return (
     <main className="mx-auto my-6 max-w-7xl">
       <div className="mx-4 flex flex-col gap-6 md:col-span-1">
         <div className="grid w-full grid-cols-1 rounded-lg border border-zinc-200 p-4 text-center md:grid-cols-3">
-          <div className="col-span-1">
+          <div className="col-span-1 flex flex-col items-center justify-around p-0 md:py-4">
             <h1 className="mb-2 text-2xl font-semibold">
               Jak zoptymalizować stronę?
             </h1>
-            <span className="text-xs sm:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nulla justo, consectetur sit amet dui ac, ultrices viverra tortor.
-              Duis eget rhoncus nulla. Morbi vel nibh et ex sagittis ultrices.
+            <span className="inline-block text-xs sm:text-sm">
+              Next.js posiada wiele wbudowanych ułatwień, które w rękach
+              sprawnego dewelopera pozwolą tworzyć szybkie, wydajne nowoczesne
+              strony spełniające założenia{' '}
+              <a
+                className="font-medium underline"
+                href="https://web.dev/vitals/"
+              >
+                Core Web Vitals
+              </a>
+            </span>
+            <span className="mt-2 inline-block text-xs sm:text-sm">
+              Poniżej znajdziesz wskazówki które pozwolą Ci usprawnić jakość
+              doświadczeń użytkowników oraz poprawić wyniki SEO dzięki którym
+              poprawisz wyniki wyszukiwania twoich aplikacji!
             </span>
           </div>
-          <div className="col-span-2 mx-auto flex w-2/3 flex-col items-center justify-center gap-6">
+          <div className="col-span-2 mx-auto mt-4 flex w-2/3 flex-col items-center justify-center gap-6 md:mt-0">
             <Image
               className="rounded-lg"
-              src="https://www.transparentpng.com/download/seo-png/seo-free-download-4.png"
-              width={350}
-              height={180}
+              src="/images/seo-free-download-4.png"
+              width={360}
+              height={280}
               alt={'Hero image'}
+              sizes="(max-width: 768px) 200px, 360px"
               priority
-            ></Image>
+            />
           </div>
         </div>
       </div>
 
-      <Suspense>
-        <ListStreaming />
-      </Suspense>
-
-      <Suspense>
-        <BlogPosts />
-      </Suspense>
+      <div className="h-[1000px]">WIP</div>
     </main>
   );
 }
