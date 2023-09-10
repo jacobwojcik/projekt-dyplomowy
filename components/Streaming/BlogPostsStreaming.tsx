@@ -20,6 +20,7 @@ const BlogPosts = async () => {
                   src={blog.imageUrl ?? ''}
                   alt={`Blog post`}
                   className="rounded-lg"
+                  sizes="280px"
                 ></Image>
               </div>
               <span className="mt-1 text-sm text-zinc-500">

@@ -42,7 +42,7 @@ const TodoSchema = z.object({
 
 const todoCategoriesArray = Object.values(TodoCategoryEnum);
 
-const AddProductForm = () => {
+const AddTodoForm = () => {
   const { toast } = useToast();
 
   const form = useForm<z.infer<typeof TodoSchema>>({
@@ -154,4 +154,4 @@ const AddProductForm = () => {
   );
 };
 
-export default AddProductForm;
+export default AddTodoForm;

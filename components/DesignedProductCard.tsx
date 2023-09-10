@@ -27,6 +27,7 @@ const DesignedProductCard = ({ product }: Props) => {
             src={imageurl ?? '/not-found'}
             objectFit="contain"
             alt={name}
+            sizes="(max-width:420px) 280px"
           />
         </div>
       </CardHeader>

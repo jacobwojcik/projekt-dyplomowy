@@ -1,4 +1,8 @@
 import Image from 'next/image';
+import { Suspense } from 'react';
+
+import BlogPosts from '@/components/Streaming/BlogPostsStreaming';
+import ListStreaming from '@/components/Streaming/ListStreaming';
 
 export const dynamic = 'force-static';
 
@@ -35,14 +39,20 @@ export default async function Page() {
               width={360}
               height={280}
               alt={'Hero image'}
-              sizes="(max-width: 768px) 200px, 360px"
+              sizes="(max-width: 768px) 30vw, 360px"
               priority
             />
           </div>
         </div>
       </div>
 
-      <div className="h-[1000px]">WIP</div>
+      <Suspense>
+        <ListStreaming />
+      </Suspense>
+
+      <Suspense>
+        <BlogPosts />
+      </Suspense>
     </main>
   );
 }
