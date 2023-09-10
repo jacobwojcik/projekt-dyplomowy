@@ -37,9 +37,9 @@ export default async function Page() {
               className="rounded-lg"
               src="/images/seo-free-download-4.png"
               width={360}
-              height={280}
+              height={190}
               alt={'Hero image'}
-              sizes="(max-width: 768px) 30vw, 360px"
+              sizes="(max-width: 480px) 250px, (max-width: 768px) 30vw, 360px"
               priority
             />
           </div>
