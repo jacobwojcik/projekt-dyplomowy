@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Suspense } from 'react';
 
+import SeoCards from '@/components/SeoOptimization/SeoCards';
 import BlogPosts from '@/components/Streaming/BlogPostsStreaming';
 import ListStreaming from '@/components/Streaming/ListStreaming';
 
@@ -9,7 +10,7 @@ export const dynamic = 'force-static';
 export default async function Page() {
   return (
     <main className="mx-auto my-6 max-w-7xl">
-      <div className="mx-4 flex flex-col gap-6 md:col-span-1">
+      <div className="mx-4 flex flex-col gap-6 md:col-span-1 xl:mx-0">
         <div className="grid w-full grid-cols-1 rounded-lg border border-zinc-200 p-4 text-center md:grid-cols-3">
           <div className="col-span-1 flex flex-col items-center justify-around p-0 md:py-4">
             <h1 className="mb-2 text-2xl font-semibold">
@@ -53,6 +54,8 @@ export default async function Page() {
       <Suspense>
         <BlogPosts />
       </Suspense>
+
+      <SeoCards />
     </main>
   );
 }
