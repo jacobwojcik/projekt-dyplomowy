@@ -1,8 +1,7 @@
 export const formatTime = (dateTimeString: string) => {
-  const date = new Date(dateTimeString);
-  const hours = String(date.getHours()).padStart(2, '0');
-  const minutes = String(date.getMinutes()).padStart(2, '0');
-  const seconds = String(date.getSeconds()).padStart(2, '0');
+  const hours = dateTimeString.slice(11, 13);
+  const minutes = dateTimeString.slice(14, 16);
+  const seconds = dateTimeString.slice(17, 19);
 
   return `${hours}:${minutes}:${seconds}`;
 };
