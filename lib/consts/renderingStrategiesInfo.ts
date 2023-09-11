@@ -5,7 +5,7 @@ export const renderingStrategiesInfo: Record<string, RenderingStrategiesInfo> =
     ssr: {
       title: 'SSR - Server Side Rendering',
       description:
-        'Server Side Rendering (SSR), czyli renderowanie po stronie serwera, to technika pozwalająca na generowanie pełnych stron internetowych na serwerze, przed ich dostarczeniem do przeglądarki klienta. W przypadku użycia Next.js, SSR może być osiągnięte w prosty sposób dzięki wbudowanym funkcjom frameworku. W tym przypadku żądania również rozwiązywane są dynamicznie, ale po stronie serwera i przed załadowaniem strony. Widoczna godzina to czas załadowania strony.',
+        'Server Side Rendering (SSR), czyli renderowanie po stronie serwera, to technika pozwalająca na generowanie pełnych stron internetowych na serwerze, przed ich dostarczeniem do przeglądarki klienta. Jest to szczególnie przydatne w przypadku aplikacji internetowych, które wymagają dobrej wydajności i optymalizacji pod kątem SEO. W tym przypadku żądania również rozwiązywane są dynamicznie, ale po stronie serwera i przed załadowaniem strony. Widoczna godzina to czas załadowania strony.',
       pros: [
         'Optymalizacja czasu ładowania',
         'Lepsze wsparcie dla SEO',
@@ -46,7 +46,7 @@ export const renderingStrategiesInfo: Record<string, RenderingStrategiesInfo> =
     isr: {
       title: 'Incremental Static Regeneration',
       description:
-        'Incremental Static Regeneration (ISR), czyli ulepszone SSG. Jest to metoda, która umożliwia generowanie i regenerację statycznych stron internetowych. Ma znaczącą przewagę nad stronami w pełni statycznymi ponieważ, dane mogę być odświeżane co pewien czas. W tym przypadku można zauważyć, że czas jest regenrowany co 30 sekund. Spróbuj odświeźyć stronę, aby zobaczyć aktualny czas. ISR często wykorzystywane jest na stronach na których treśći odświeżane są co pewien, określony czas , np. wpisy na blogu.',
+        'Incremental Static Regeneration (ISR), czyli ulepszone SSG. Jest to metoda, która umożliwia generowanie i regenerację statycznych stron internetowych. Ma znaczącą przewagę nad stronami w pełni statycznymi ponieważ, dane mogę być odświeżane co pewien czas. W tym przypadku można zauważyć, że czas jest regenrowany co 30 sekund. Spróbuj odświeźyć stronę, aby zobaczyć aktualny czas. ISR często wykorzystywane jest na stronach na których treśći odświeżane są co pewien, określony czas, np. wpisy na blogu.',
       pros: [
         'Łączy w sobie zalety SSR i SSG',
         'Optymalizacja SEO',
