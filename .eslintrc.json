@@ -46,6 +46,7 @@
         "@next/next/no-img-element": "off", 
         "@next/next/link-passhref": "off", 
         "@typescript-eslint/comma-dangle": "off", 
+        "@typescript-eslint/no-implied-eval": "off",
         "@typescript-eslint/consistent-type-imports": "error", 
         "no-restricted-syntax": [
           "error",

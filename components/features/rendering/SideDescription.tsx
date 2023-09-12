@@ -8,9 +8,8 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/Card';
+import { Separator } from '@/components/ui/Separator';
 import type { RenderingStrategiesInfo } from '@/types';
-
-import { Separator } from '../ui/Separator';
 
 interface Props {
   information: RenderingStrategiesInfo;

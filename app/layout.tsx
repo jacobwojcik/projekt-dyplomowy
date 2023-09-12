@@ -3,8 +3,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
+import Footer from '@/components/shared/Footer';
+import Header from '@/components/shared/Header';
 import { Toaster } from '@/components/ui/Toaster';
 
 const font = Montserrat({
