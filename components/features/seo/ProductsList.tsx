@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 import type { ProductInfo } from '@/types';
 
-import DesignedProductCard from '../DesignedProductCard';
+import ProductCard from '../../shared/ProductCard';
 
 const host = process.env.NEXT_PUBLIC_VERCEL_URL
   ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
@@ -33,7 +33,7 @@ const ProductsList = () => {
       <h1 className="my-4 text-lg font-semibold">Najnowsze okazje!</h1>
       <div className="grid-col-1 my-4 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {products.slice(0, 5).map((product) => (
-          <DesignedProductCard key={product.id} product={product} />
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
     </div>

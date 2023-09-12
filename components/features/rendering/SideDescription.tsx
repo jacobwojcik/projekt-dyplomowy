@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/Card';
 import type { RenderingStrategiesInfo } from '@/types';
 
-import { Separator } from './ui/Separator';
+import { Separator } from '../ui/Separator';
 
 interface Props {
   information: RenderingStrategiesInfo;

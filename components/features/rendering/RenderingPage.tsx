@@ -7,8 +7,8 @@ import type {
   Time,
 } from '@/types';
 
-import BlogPosts from './BlogPosts';
-import ProductsList from './ProductsList';
+import BlogPosts from '../../shared/BlogPosts';
+import ProductsList from '../../shared/ProductsList';
 import SideDescription from './SideDescription';
 
 interface Props {

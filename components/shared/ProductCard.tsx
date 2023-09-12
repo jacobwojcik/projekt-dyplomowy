@@ -3,13 +3,13 @@ import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import type { ProductInfo } from '@/types';
 
-import { Badge } from './ui/Badge';
+import { Badge } from '../ui/Badge';
 
 interface Props {
   product: ProductInfo;
 }
 
-const DesignedProductCard = ({ product }: Props) => {
+const ProductCard = ({ product }: Props) => {
   const { name, description, category, imageurl, price, quantity } = product;
   return (
     <Card className="py-5 text-center">
@@ -25,9 +25,9 @@ const DesignedProductCard = ({ product }: Props) => {
           <Image
             fill
             src={imageurl ?? '/not-found'}
-            objectFit="contain"
             alt={name}
             sizes="(max-width:420px) 280px"
+            className="object-contain"
           />
         </div>
       </CardHeader>
@@ -50,4 +50,4 @@ const DesignedProductCard = ({ product }: Props) => {
   );
 };
 
-export default DesignedProductCard;
+export default ProductCard;

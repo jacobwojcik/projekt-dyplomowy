@@ -1,10 +1,10 @@
 import { formatTime } from '@/lib/helpers';
 import type { ProductInfo, Time } from '@/types';
 
-import DesignedProductCard from './DesignedProductCard';
-import ProductCardLoader from './features/loaders/ProductCardLoader';
-import { Separator } from './ui/Separator';
-import { Skeleton } from './ui/Skeleton';
+import ProductCardLoader from '../features/loaders/ProductCardLoader';
+import { Separator } from '../ui/Separator';
+import { Skeleton } from '../ui/Skeleton';
+import ProductCard from './ProductCard';
 
 interface Props {
   products: ProductInfo[];
@@ -30,7 +30,7 @@ const ProductsList = ({ products, currentTime }: Props) => {
       <div className="my-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
         {products.length
           ? products.map((product) => (
-              <DesignedProductCard key={product.id} product={product} />
+              <ProductCard key={product.id} product={product} />
             ))
           : [...Array.from({ length: 6 })].map((_, index) => (
               <ProductCardLoader key={index} />

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 import type { BlogPost } from '@/types';
 
-import BlogPosts from '../BlogPosts';
+import BlogPosts from '../../shared/BlogPosts';
 
 const host = process.env.NEXT_PUBLIC_VERCEL_URL
   ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`

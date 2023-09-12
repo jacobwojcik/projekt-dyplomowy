@@ -3,8 +3,8 @@ import React from 'react';
 
 import type { BlogPost } from '@/types';
 
-import BlogPostLoader from './features/loaders/BlogPostLoader';
-import { ScrollArea, ScrollBar } from './ui/ScrollArea';
+import BlogPostLoader from '../features/loaders/BlogPostLoader';
+import { ScrollArea, ScrollBar } from '../ui/ScrollArea';
 
 interface Props {
   blogPosts: BlogPost[];
@@ -21,10 +21,9 @@ const BlogPosts = ({ blogPosts }: Props) => {
                   <Image
                     width={280}
                     height={160}
-                    style={{ objectFit: 'cover' }}
                     src={blog.imageUrl ?? ''}
                     alt={`Blog post`}
-                    className="rounded-lg"
+                    className="rounded-lg object-cover"
                   ></Image>
                 </div>
                 <span className="mt-1 text-sm text-zinc-500">

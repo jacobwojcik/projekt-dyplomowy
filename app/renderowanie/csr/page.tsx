@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-import RenderingPage from '@/components/RenderingPage';
+import RenderingPage from '@/components/features/rendering/RenderingPage';
 import { renderingStrategiesInfo } from '@/lib/consts/renderingStrategiesInfo';
 import type { Time } from '@/types';
 

@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { Suspense } from 'react';
 
-import SeoCards from '@/components/SeoOptimization/SeoCards';
-import BlogPosts from '@/components/Streaming/BlogPostsStreaming';
-import ListStreaming from '@/components/Streaming/ListStreaming';
+import SeoCards from '@/components/features/seo/SeoCards';
+import BlogPosts from '@/components/features/streaming/BlogPostsStreaming';
+import ListStreaming from '@/components/features/streaming/ListStreaming';
 
 export const dynamic = 'force-static';
 

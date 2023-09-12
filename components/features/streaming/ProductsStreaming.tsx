@@ -1,6 +1,6 @@
 import { getProducts } from '@/lib/queries';
 
-import DesignedProductCard from '../DesignedProductCard';
+import ProductCard from '../../shared/ProductCard';
 
 const ProductsStreaming = async () => {
   const products = await getProducts(3);
@@ -8,7 +8,7 @@ const ProductsStreaming = async () => {
     <div className="my-6 grid grid-cols-1 gap-6 sm:grid-cols-3">
       {products.length ? (
         products.map((product) => (
-          <DesignedProductCard key={product.id} product={product} />
+          <ProductCard key={product.id} product={product} />
         ))
       ) : (
         <span>Loading...</span>

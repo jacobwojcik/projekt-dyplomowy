@@ -2,8 +2,8 @@ import './style.css';
 
 import type { Metadata } from 'next';
 
-import BlogPostsUnoptimized from '@/components/SeoOptimization/BlogPosts';
-import ProductsList from '@/components/SeoOptimization/ProductsList';
+import BlogPostsUnoptimized from '@/components/features/seo/BlogPosts';
+import ProductsList from '@/components/features/seo/ProductsList';
 
 export const metadata: Metadata = {
   title: '',

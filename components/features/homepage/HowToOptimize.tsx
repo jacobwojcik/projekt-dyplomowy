@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ButtonLink } from '../ui/ButtonLink';
+import { ButtonLink } from '../../ui/ButtonLink';
 
 const HowToOptimize = () => {
   return (

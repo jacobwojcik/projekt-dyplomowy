@@ -21,11 +21,9 @@ const LinkCard = ({ href, title, imageUrl, children }: Props) => {
         <div className="relative h-[180px] w-full">
           <Image
             fill
-            objectFit="cover"
-            objectPosition="top left"
             src={imageUrl}
             alt={title}
-            className="border-b border-zinc-300"
+            className="border-b border-zinc-300 object-cover object-left-top"
           />
         </div>
         <div className="flex flex-col justify-between space-y-4 p-6">

@@ -1,11 +1,11 @@
 import { Suspense } from 'react';
 
 import ProductListLoader from '@/components/features/loaders/ProductListLoader';
-import SideDescription from '@/components/SideDescription';
-import BlogPosts from '@/components/Streaming/BlogPostsStreaming';
-import CurrentTime from '@/components/Streaming/CurrentTime';
-import ProductsStreaming from '@/components/Streaming/ProductsStreaming';
-import ProductsStreamingLong from '@/components/Streaming/ProductsStreamingLong';
+import BlogPosts from '@/components/features/streaming/BlogPostsStreaming';
+import CurrentTime from '@/components/features/streaming/CurrentTime';
+import ProductsStreaming from '@/components/features/streaming/ProductsStreaming';
+import ProductsStreamingLong from '@/components/features/streaming/ProductsStreamingLong';
+import SideDescription from '@/components/shared/SideDescription';
 import { Separator } from '@/components/ui/Separator';
 import { nextFeaturesInfo } from '@/lib/consts/renderingStrategiesInfo';
 

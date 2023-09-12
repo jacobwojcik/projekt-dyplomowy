@@ -1,6 +1,6 @@
 import CachingCard from '@/components/features/next-13/CachingCard';
 import PossibilitiesCard from '@/components/features/next-13/PossibilitiesCard';
-import TimeTable from '@/components/TimeTable';
+import TimeTable from '@/components/features/next-13/TimeTable';
 
 export const revalidate = 30;
 export const dynamic = 'force-dynamic';

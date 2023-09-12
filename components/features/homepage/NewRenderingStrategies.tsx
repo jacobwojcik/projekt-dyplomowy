@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 
-import { Badge } from '../ui/Badge';
-import { ButtonLink } from '../ui/ButtonLink';
+import { Badge } from '../../ui/Badge';
+import { ButtonLink } from '../../ui/ButtonLink';
 
 const badges = ['SEO', 'Rendering', 'Rewalidacja', 'Cache', 'Web'];
 

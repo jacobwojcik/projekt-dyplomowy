@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import { getBlogPosts } from '@/lib/queries';
 
-import { ScrollArea, ScrollBar } from '../ui/ScrollArea';
+import { ScrollArea, ScrollBar } from '../../ui/ScrollArea';
 
 const BlogPosts = async () => {
   const blogPosts = await getBlogPosts();
@@ -16,10 +16,9 @@ const BlogPosts = async () => {
                 <Image
                   width={280}
                   height={160}
-                  style={{ objectFit: 'cover' }}
                   src={blog.imageUrl ?? ''}
                   alt={`Blog post`}
-                  className="rounded-lg"
+                  className="rounded-lg object-cover"
                   sizes="280px"
                 ></Image>
               </div>

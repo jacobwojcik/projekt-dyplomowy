@@ -1,6 +1,6 @@
 import { getProducts } from '@/lib/queries';
 
-import DesignedProductCard from '../DesignedProductCard';
+import ProductCard from '../../shared/ProductCard';
 const delay = async () => {
   return new Promise((resolve) => setTimeout(resolve, 3000));
 };
@@ -13,7 +13,7 @@ const ProductsStreamingLong = async () => {
     <div className="my-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
       {products.length &&
         products.map((product) => (
-          <DesignedProductCard key={product.id} product={product} />
+          <ProductCard key={product.id} product={product} />
         ))}
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LinkCard from '../ui/LinkCard';
+import LinkCard from '../../ui/LinkCard';
 
 const WhatsMore = () => {
   return (

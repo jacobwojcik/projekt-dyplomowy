@@ -1,4 +1,4 @@
-import RenderingPage from '@/components/RenderingPage';
+import RenderingPage from '@/components/features/rendering/RenderingPage';
 import { ButtonLink } from '@/components/ui/ButtonLink';
 import { renderingStrategiesInfo } from '@/lib/consts/renderingStrategiesInfo';
 import { getBlogPosts, getProducts } from '@/lib/queries';
