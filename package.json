@@ -52,7 +52,6 @@
     "react-hook-form": "^7.45.4",
     "tailwind-merge": "^1.14.0",
     "tailwindcss": "3.3.3",
-    "timezone": "link:dayjs/plugin/timezone",
     "typescript": "5.1.6",
     "zod": "^3.21.4"
   },
