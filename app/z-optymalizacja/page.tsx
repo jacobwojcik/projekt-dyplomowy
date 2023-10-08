@@ -4,8 +4,9 @@ import { Suspense } from 'react';
 import SeoCards from '@/components/features/seo/SeoCards';
 import BlogPosts from '@/components/features/streaming/BlogPostsStreaming';
 import ListStreaming from '@/components/features/streaming/ListStreaming';
+import SeoResults from '@/components/features/seo/SeoResults';
 
-export const dynamic = 'force-static';
+// export const dynamic = 'force-static';
 
 export default async function Page() {
   return (
@@ -56,6 +57,8 @@ export default async function Page() {
       </Suspense>
 
       <SeoCards />
+
+      <SeoResults />
     </main>
   );
 }
