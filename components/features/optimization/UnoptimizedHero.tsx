@@ -19,11 +19,13 @@ const UnoptimizedHero = () => {
         <div className="col-span-1 flex flex-col justify-center">
           <h1 className="mb-2 text-2xl font-semibold">Czego nie robić?</h1>
           <span className="text-xs sm:text-base">
-            Aktualna strona jest przykładem tego czego{' '}
-            <span className="font-semibold">NIE</span> robić. Quisque at lectus
-            a erat fringilla placerat vel sed mi. Cras vel purus at enim
-            hendrerit sollicitudin vel et nibh. In ultricies massa purus, vel
-            cursus tellus sagittis sit amet.
+            Aktualna strona jest przykładem tego jak{' '}
+            <span className="font-semibold">NIE</span> budować nowoczesnych
+            witryn internetowych. Złe praktyki są widoczne już na pierwszy rzut
+            oka. Słabe user experience (doświadczenia użytkownika) jest
+            spowodowane prze długie wczytywanie treści. Poniżej znajdziesz
+            wyniki testów SEO, które są powszechnie używanymi metrykami do
+            określania wydajności stron internetowych.
           </span>
         </div>
         <div className="col-span-2 mx-auto flex w-full sm:w-2/3 flex-col items-center justify-center gap-6 h-[400px] sm:h-auto">
