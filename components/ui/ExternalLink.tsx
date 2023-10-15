@@ -5,7 +5,11 @@ interface Props {
 
 const ExternalLink = ({ name, href }: Props) => {
   return (
-    <a href={href} className="font-medium underline text-sm my-2 inline-block">
+    <a
+      href={href}
+      target="_blank"
+      className="font-medium underline text-sm my-2 inline-block"
+    >
       {name}
     </a>
   );

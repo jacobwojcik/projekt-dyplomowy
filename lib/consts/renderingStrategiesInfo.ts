@@ -20,7 +20,7 @@ export const renderingStrategiesInfo: Record<string, RenderingStrategiesInfo> =
     csr: {
       title: 'CSR - Client Side Rendering',
       description:
-        'Client-Side Rendering (CSR), czyli renderowanie po stronie klienta, to technika generowania stron internetowych, w której większość procesu renderowania odbywa się po stronie przeglądarki klienta, a nie na serwerze. W przeciwnym razie, w przypadku Server-Side Rendering (SSR), strony są generowane w całości na serwerze i dostarczane do przeglądarki klienta jako gotowy HTML. Zwróć uwagę na wyświetlaną godzinę, jest to czas w którym zostały zwrócone informacje na stronie. Moesz równie zauważyć, że dane ładowane są po wejściu na  stronę (żądania można podejrzeć w zakładce Network przeglądarki)',
+        'Client-Side Rendering (CSR), czyli renderowanie po stronie klienta, to technika generowania stron internetowych, w której większość procesu renderowania odbywa się po stronie przeglądarki klienta, a nie na serwerze. W przeciwnym razie, w przypadku Server-Side Rendering (SSR), strony są generowane w całości na serwerze i dostarczane do przeglądarki klienta jako gotowy HTML. Zwróć uwagę na wyświetlaną godzinę, jest to czas w którym zostały zwrócone informacje na stronie. Możesz równie zauważyć, że dane ładowane są po wejściu na  stronę (żądania można podejrzeć w zakładce Network przeglądarki)',
       pros: [
         'Interaktywność',
         'Separacja logiki frontendu i backendu:',

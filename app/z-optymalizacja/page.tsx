@@ -24,6 +24,7 @@ export default async function Page() {
               <a
                 className="font-medium underline"
                 href="https://web.dev/vitals/"
+                target="_blank"
               >
                 Core Web Vitals
               </a>
