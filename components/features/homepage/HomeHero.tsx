@@ -3,8 +3,9 @@ import { ButtonLink } from '../../ui/ButtonLink';
 const HomeHero = () => {
   return (
     <div className="mx-auto flex h-[620px] w-full flex-col items-center justify-center px-4 text-center">
-      <h1 className="mb-8 text-5xl font-semibold">
-        Next.js, czyli web w nowoczesnym wydaniu
+      <h1 className="mb-8 text-5xl sm:text-6xl font-bold">
+        <span className="text-red-700">Next.js</span>, czyli web w nowoczesnym
+        wydaniu
       </h1>
       <h2 className="max-w-4xl">
         Next.js to nowoczesny, elastyczny framework Reacta do budowania
