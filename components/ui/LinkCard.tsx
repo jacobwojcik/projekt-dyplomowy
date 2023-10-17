@@ -23,6 +23,7 @@ const LinkCard = ({ href, title, imageUrl, children }: Props) => {
             src={imageUrl}
             alt={title}
             className="border-b border-zinc-300 object-cover object-left-top"
+            sizes="(max-width: 768px) 80vw, 180px"
           />
         </div>
         <div className="flex flex-col justify-between space-y-4 p-6">

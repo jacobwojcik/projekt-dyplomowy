@@ -49,6 +49,7 @@ const NewRenderingStrategies = () => {
             width={520}
             height={130}
             className="h-4/5 object-contain"
+            sizes="(max-width: 768px) 80vw, 33vw"
             src="/images/web.png"
           />
         </div>
