@@ -25,7 +25,7 @@ const HowToOptimize = () => {
         <div className="bg-white shadow-md rounded-lg py-5 w-[250px]">
           <ScoreCounter />
           <div className="w-[250px] text-center">
-            <span className="text-xl text-green-500 inline-block] text-center">
+            <span className="text-xl text-black inline-block text-center">
               SEO
             </span>
           </div>

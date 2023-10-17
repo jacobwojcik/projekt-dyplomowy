@@ -48,7 +48,7 @@ const NewRenderingStrategies = () => {
             alt="Web development"
             width={520}
             height={130}
-            className="h-4/5"
+            className="h-4/5 object-contain"
             src="/images/web.png"
           />
         </div>

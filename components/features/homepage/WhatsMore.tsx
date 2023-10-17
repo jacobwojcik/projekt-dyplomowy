@@ -21,6 +21,7 @@ const WhatsMore = () => {
           href={`/streaming`}
           title="Streaming"
           imageUrl="/images/streaming.png"
+          aria-label="Streaming Dlaczego?"
         >
           Dlaczego?
         </LinkCard>
@@ -28,6 +29,7 @@ const WhatsMore = () => {
           href={`/rewalidacja`}
           title="Rewalidacja"
           imageUrl="/images/rewalidacja.png"
+          aria-label="Rewalidacja"
         >
           Po co?
         </LinkCard>

@@ -14,7 +14,6 @@ const LinkCard = ({ href, title, imageUrl, children }: Props) => {
   return (
     <Link
       className="subheading-anchor w-full font-medium sm:w-[340px]"
-      aria-label="Link to section"
       href={href}
     >
       <div className="relative  w-full rounded-lg border bg-white shadow-md  duration-200 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-lg">

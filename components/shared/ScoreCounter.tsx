@@ -39,7 +39,7 @@ export default function ScoreCounter() {
         {inView ? (
           <AutoCounter />
         ) : (
-          <p className="absolute inset-0 mx-auto flex items-center justify-center font-display text-xl text-green-500">
+          <p className="absolute inset-0 mx-auto flex items-center justify-center font-display font-semibold text-xl text-green-500">
             0
           </p>
         )}
