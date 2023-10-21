@@ -70,10 +70,22 @@ module.exports = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: 0 },
         },
+        bounceLeftRight: {
+          '10%': { transform: 'translateX(10px)' },
+          '20%': { transform: 'translateX(-10px)' },
+          '30%, 100%': { transform: 'translateX(0px)' },
+        },
+        bounceRightLeft: {
+          '10%': { transform: 'translateX(-10px)' },
+          '20%': { transform: 'translateX(10px)' },
+          '30%, 100%': { transform: 'translateX(0px)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'bounce-left-right': 'bounceLeftRight 4s ease-in-out infinite',
+        'bounce-right-left': 'bounceRightLeft 4s ease-in-out infinite',
       },
     },
   },

@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import RenderingPage from '@/components/features/rendering/RenderingPage';
 import { renderingStrategiesInfo } from '@/lib/consts/renderingStrategiesInfo';
 import type { Time } from '@/types';
+import CsrNetwork from '@/components/features/rendering/CsrNetwork';
 
 const host = process.env.NEXT_PUBLIC_VERCEL_URL
   ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
@@ -59,6 +60,14 @@ export default function Page() {
       products={products}
       currentTime={currentTime}
       blogPosts={blogPosts}
-    />
+      navOptions={{
+        prevHref: '/',
+        prevName: 'Wróć na stronę główną',
+        nextHref: '/renderowanie/ssr',
+        nextName: 'Server Side Rendering (SSR)',
+      }}
+    >
+      <CsrNetwork />
+    </RenderingPage>
   );
 }

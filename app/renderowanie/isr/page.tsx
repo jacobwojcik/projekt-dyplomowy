@@ -23,13 +23,12 @@ export default async function Page() {
       products={products}
       currentTime={currentTime}
       blogPosts={blogPosts}
-    >
-      <>
-        <span className="mb-2">Zobacz także:</span>
-        <ButtonLink href={`/rewalidacja`}>
-          Rewalidacja statycznych treści
-        </ButtonLink>
-      </>
-    </RenderingPage>
+      navOptions={{
+        prevHref: '/renderowanie/ssg',
+        prevName: 'Static Site Generation (SSG)',
+        nextHref: '/',
+        nextName: 'Wróć na stronę główną',
+      }}
+    ></RenderingPage>
   );
 }

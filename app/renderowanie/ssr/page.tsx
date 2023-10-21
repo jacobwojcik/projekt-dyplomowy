@@ -17,11 +17,12 @@ export default async function Page() {
       products={products}
       currentTime={currentTime}
       blogPosts={blogPosts}
-    >
-      <>
-        <span className="mb-2">Zobacz także:</span>
-        <ButtonLink href={`/streaming`}>Streaming + Suspense</ButtonLink>
-      </>
-    </RenderingPage>
+      navOptions={{
+        prevHref: '/renderowanie/csr',
+        prevName: 'Client Side Rendering (CSR)',
+        nextHref: '/renderowanie/ssg',
+        nextName: 'Static Site Generation (SSG)',
+      }}
+    ></RenderingPage>
   );
 }

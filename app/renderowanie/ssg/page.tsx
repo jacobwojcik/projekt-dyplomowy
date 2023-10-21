@@ -18,6 +18,12 @@ export default async function Page() {
       products={products}
       currentTime={currentTime}
       blogPosts={blogPosts}
+      navOptions={{
+        prevHref: '/renderowanie/ssr',
+        prevName: 'Server Side Rendering (SSR)',
+        nextHref: '/renderowanie/isr',
+        nextName: 'Incremental Static Regeneration (ISR)',
+      }}
     />
   );
 }
