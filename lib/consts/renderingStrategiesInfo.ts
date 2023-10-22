@@ -36,7 +36,7 @@ export const renderingStrategiesInfo: Record<string, RenderingStrategiesInfo> =
     ssg: {
       title: 'SSG - Static Site Generation',
       description:
-        'Static Site Generation (SSG) to technika, która umożliwia generowanie pełnych stron internetowych na serwerze w trakcie procesu budowania strony, przed jej dostarczeniem do przeglądarki klienta. Strona jest w pełni statyczna, to znaczy, że dane widoczne na niej zasoby zostały pobrane podczas jej generowania. Widoczny czas to godzina wygenerowania strony. SSG jest idealny do stron które sie nie zmieniają i cała zawartość może być  wygenerowana w momencie budowania projektu.',
+        'Static Site Generation (SSG) to technika, która umożliwia generowanie pełnych stron internetowych na serwerze w trakcie procesu budowania strony, przed jej dostarczeniem do przeglądarki klienta. Strona jest w pełni statyczna, to znaczy, że dane widoczne na niej zasoby zostały pobrane podczas jej generowania. Widoczny czas to godzina wygenerowania strony a więc po odświeżeniu pozostanie ten sam. SSG jest idealny do stron które sie nie zmieniają i cała zawartość może być wygenerowana w momencie budowania projektu, na przykład: blogi, dokumntacja lub portfolio.',
       pros: ['Wydajność', 'Bezpieczeństwo', 'Optymalizacja dla SEO'],
       cons: [
         'Czas generowania',
@@ -47,7 +47,7 @@ export const renderingStrategiesInfo: Record<string, RenderingStrategiesInfo> =
     isr: {
       title: 'Incremental Static Regeneration',
       description:
-        'Incremental Static Regeneration (ISR), czyli ulepszone SSG. Jest to metoda, która umożliwia generowanie i regenerację statycznych stron internetowych. Ma znaczącą przewagę nad stronami w pełni statycznymi ponieważ, dane mogę być odświeżane co pewien czas. W tym przypadku można zauważyć, że czas jest regenrowany co 30 sekund. Spróbuj odświeźyć stronę, aby zobaczyć aktualny czas. ISR często wykorzystywane jest na stronach na których treśći odświeżane są co pewien, określony czas, np. wpisy na blogu.',
+        'Incremental Static Regeneration (ISR), czyli ulepszone SSG. Jest to metoda, która umożliwia generowanie i regenerację statycznych stron internetowych. Ma znaczącą przewagę nad stronami w pełni statycznymi ponieważ, dane mogę być odświeżane co pewien czas. W tym przypadku strona jest regenerowana co 30 sekund. Spróbuj odświeżyć stronę, aby zobaczyć aktualny czas. Jeśli odświeżysz ją ponownie to zobaczysz poprzedni czas, zmieni się on ponownie po 30 sekundach. ISR często wykorzystywane jest na stronach na których treści odświeżane są co pewien, określony czas, np. platforma e-commerce.',
       pros: [
         'Łączy w sobie zalety SSR i SSG',
         'Optymalizacja SEO',

@@ -1,3 +1,4 @@
+import IsrCodeBlock from '@/components/features/rendering/IsrCodeBlock';
 import RenderingPage from '@/components/features/rendering/RenderingPage';
 import { ButtonLink } from '@/components/ui/ButtonLink';
 import { renderingStrategiesInfo } from '@/lib/consts/renderingStrategiesInfo';
@@ -29,6 +30,8 @@ export default async function Page() {
         nextHref: '/',
         nextName: 'Wróć na stronę główną',
       }}
-    ></RenderingPage>
+    >
+      <IsrCodeBlock />
+    </RenderingPage>
   );
 }

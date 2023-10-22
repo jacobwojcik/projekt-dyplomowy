@@ -1,4 +1,5 @@
 import RenderingPage from '@/components/features/rendering/RenderingPage';
+import SsgCodeBlock from '@/components/features/rendering/SsgCodeBlock';
 import { renderingStrategiesInfo } from '@/lib/consts/renderingStrategiesInfo';
 import { getBlogPosts, getProducts } from '@/lib/queries';
 import { getCurrentTime } from '@/lib/utils';
@@ -24,6 +25,8 @@ export default async function Page() {
         nextHref: '/renderowanie/isr',
         nextName: 'Incremental Static Regeneration (ISR)',
       }}
-    />
+    >
+      <SsgCodeBlock />
+    </RenderingPage>
   );
 }
