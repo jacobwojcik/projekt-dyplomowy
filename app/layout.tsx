@@ -1,15 +1,21 @@
 import './globals.css';
 
 import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
+import { Montserrat, Fira_Code } from 'next/font/google';
 
 import Footer from '@/components/shared/Footer';
 import Header from '@/components/shared/Header';
 import { Toaster } from '@/components/ui/Toaster';
 
-const font = Montserrat({
+const monteserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
+});
+
+export const firaCode = Fira_Code({
+  subsets: ['latin'],
+  variable: '--font-fira-code',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -24,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${font.variable}`}>
+    <html lang="en" className={`${monteserrat.variable} ${firaCode.variable}`}>
       <body className={` min-h-screen`}>
         <Header />
         <main className="">{children}</main>

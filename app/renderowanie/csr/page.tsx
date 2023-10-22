@@ -6,10 +6,7 @@ import RenderingPage from '@/components/features/rendering/RenderingPage';
 import { renderingStrategiesInfo } from '@/lib/consts/renderingStrategiesInfo';
 import type { Time } from '@/types';
 import CsrNetwork from '@/components/features/rendering/CsrNetwork';
-
-const host = process.env.NEXT_PUBLIC_VERCEL_URL
-  ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-  : 'http://localhost:3000';
+import CsrCodeBlock from '@/components/features/rendering/CsrCodeBlock';
 
 export default function Page() {
   const [products, setProducts] = useState([]);
@@ -19,7 +16,7 @@ export default function Page() {
   useEffect(() => {
     const fetchProductsData = async () => {
       try {
-        const res = await fetch(`${host}/api/products`);
+        const res = await fetch(`/api/products`);
         const data = await res.json();
         setProducts(data);
       } catch (error) {
@@ -30,7 +27,7 @@ export default function Page() {
 
     const fetchBlogPostsData = async () => {
       try {
-        const res = await fetch(`${host}/api/posts`);
+        const res = await fetch(`/api/posts`);
         const data = await res.json();
         setBlogPosts(data);
       } catch (error) {
@@ -67,6 +64,7 @@ export default function Page() {
         nextName: 'Server Side Rendering (SSR)',
       }}
     >
+      <CsrCodeBlock />
       <CsrNetwork />
     </RenderingPage>
   );

@@ -11,6 +11,23 @@ img{
 }
 
 
+.font-code {
+  font-family: var(--font-fira-code);
+}
+/*
+ * react-code-blocks styles
+ */
+
+.sc-gtsqUy{
+  position: initial !important;
+}
+
+.sc-bdnyFh{
+  position: absolute;
+  right: 0;
+}
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
