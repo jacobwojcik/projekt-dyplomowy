@@ -6,6 +6,7 @@ import BlogPostsUnoptimized from '@/components/features/seo/BlogPosts';
 import ProductsList from '@/components/features/seo/ProductsList';
 import UnoptimizedHero from '@/components/features/optimization/UnoptimizedHero';
 import UnoptimizedResults from '@/components/features/optimization/UnoptimizedResults';
+import SectionNavigation from '@/components/shared/SectionNavigation';
 
 export const metadata: Metadata = {
   title: '',
@@ -35,6 +36,14 @@ export default async function Page() {
       <BlogPostsUnoptimized />
 
       <UnoptimizedResults />
+      <SectionNavigation
+        navOptions={{
+          nextHref: '/z-optymalizacja',
+          nextName: 'Z optymalizacją',
+          prevHref: '/',
+          prevName: 'Wróć na stronę główną',
+        }}
+      />
     </main>
   );
 }

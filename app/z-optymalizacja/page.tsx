@@ -5,6 +5,7 @@ import SeoCards from '@/components/features/seo/SeoCards';
 import BlogPosts from '@/components/features/streaming/BlogPostsStreaming';
 import ListStreaming from '@/components/features/streaming/ListStreaming';
 import SeoResults from '@/components/features/seo/SeoResults';
+import SectionNavigation from '@/components/shared/SectionNavigation';
 
 // export const dynamic = 'force-static';
 
@@ -60,6 +61,14 @@ export default async function Page() {
       <SeoCards />
 
       <SeoResults />
+      <SectionNavigation
+        navOptions={{
+          prevHref: '/bez-optymalizacji',
+          prevName: 'Bez optymalizacji',
+          nextHref: '/',
+          nextName: 'Wróć na stronę główną',
+        }}
+      />
     </main>
   );
 }

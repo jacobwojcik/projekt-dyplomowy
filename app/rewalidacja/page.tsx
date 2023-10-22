@@ -1,6 +1,7 @@
 import AddTodoSheet from '@/components/features/revalidation/AddTodoSheet';
 import RevalidationInfo from '@/components/features/revalidation/RevalidationInfo';
 import TodosList from '@/components/features/revalidation/TodosList';
+import SectionNavigation from '@/components/shared/SectionNavigation';
 import { formatTime } from '@/lib/helpers';
 import { getTodos } from '@/lib/queries';
 import { getCurrentTime } from '@/lib/utils';
@@ -14,7 +15,7 @@ export default async function Page() {
   ]);
   const formattedTime = formatTime(time.datetime);
   return (
-    <div className="mx-auto my-6 flex max-w-7xl flex-col items-center">
+    <div className="mx-auto my-6 flex max-w-7xl flex-col">
       <div className="flex w-full flex-col px-4 ">
         <div className="f flex items-center justify-between gap-6 ">
           <span className="flex flex-col sm:my-6  sm:flex-row sm:items-center sm:gap-4">
@@ -27,6 +28,14 @@ export default async function Page() {
       </div>
 
       <RevalidationInfo />
+      <SectionNavigation
+        navOptions={{
+          prevHref: '/streaming',
+          prevName: 'Streaming',
+          nextHref: '/',
+          nextName: 'Wróć na stronę główną',
+        }}
+      />
     </div>
   );
 }
