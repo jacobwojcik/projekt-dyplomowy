@@ -1,4 +1,6 @@
 import RenderingPage from '@/components/features/rendering/RenderingPage';
+import SsrCodeBlock from '@/components/features/rendering/SsrCodeBlock';
+import SsrNetwork from '@/components/features/rendering/SsrNetwork';
 import { ButtonLink } from '@/components/ui/ButtonLink';
 import { renderingStrategiesInfo } from '@/lib/consts/renderingStrategiesInfo';
 import { getBlogPosts, getProducts } from '@/lib/queries';
@@ -23,6 +25,9 @@ export default async function Page() {
         nextHref: '/renderowanie/ssg',
         nextName: 'Static Site Generation (SSG)',
       }}
-    ></RenderingPage>
+    >
+      <SsrNetwork />
+      <SsrCodeBlock />
+    </RenderingPage>
   );
 }

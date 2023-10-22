@@ -1,17 +1,19 @@
 interface Props {
-  name: string;
+  name?: string;
   href: string;
   className?: string;
+  children?: React.ReactNode;
 }
 
-const ExternalLink = ({ name, href, className }: Props) => {
+const ExternalLink = ({ name, href, className, children }: Props) => {
   return (
     <a
       href={href}
       target="_blank"
-      className={`font-medium underline text-sm my-2 inline-block ${className}`}
+      className={`font-medium underline text-sm inline-block ${className}`}
     >
       {name}
+      {children}
     </a>
   );
 };

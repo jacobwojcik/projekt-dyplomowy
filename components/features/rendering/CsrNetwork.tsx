@@ -8,7 +8,7 @@ const CsrNetwork = () => {
     window.location.reload();
   };
   return (
-    <section className="grid grid-cols-2 gap-6 my-8 mx-6 2xl:mx-0">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8 mx-6 2xl:mx-0">
       <div className="rounded-lg border bg-card shadow-sm w-full p-6">
         <p>
           Po zainicjowaniu strony, skrypty JavaScript mogą wykonywać dodatkowe

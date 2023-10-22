@@ -10,6 +10,7 @@ import {
 } from '@/components/ui/Card';
 import { Separator } from '@/components/ui/Separator';
 import type { RenderingStrategiesInfo } from '@/types';
+import PageRefresh from './PageRefresh';
 
 interface Props {
   information: RenderingStrategiesInfo;
@@ -63,7 +64,11 @@ const SideDescription = ({ information, children }: Props) => {
           )}
         </CardContent>
         <CardFooter className="flex flex-col items-start">
-          {children}
+          <p className=" text-sm mb-2">
+            Kliknij przycisk lub odśwież stronę żeby sprawdzić czy i w jaki
+            sposób odświeża się czas.
+          </p>
+          <PageRefresh />
         </CardFooter>
       </Card>
     </div>

@@ -64,8 +64,8 @@ export default function Page() {
         nextName: 'Server Side Rendering (SSR)',
       }}
     >
-      <CsrCodeBlock />
       <CsrNetwork />
+      <CsrCodeBlock />
     </RenderingPage>
   );
 }
