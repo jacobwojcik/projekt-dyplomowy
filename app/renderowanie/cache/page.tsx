@@ -1,3 +1,4 @@
+import TimesCodeBlock from '@/components/features/cache/TimesCodeBlock';
 import CachingCard from '@/components/features/next-13/CachingCard';
 import PossibilitiesCard from '@/components/features/next-13/PossibilitiesCard';
 import TimeTable from '@/components/features/next-13/TimeTable';
@@ -13,6 +14,7 @@ export default async function Page() {
         <PossibilitiesCard />
 
         <TimeTable />
+        <TimesCodeBlock />
 
         <CachingCard />
 

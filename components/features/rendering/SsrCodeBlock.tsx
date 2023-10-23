@@ -33,10 +33,7 @@ const SsrCodeBlock = () => {
             <Code>Route Segment Config</Code>
           </ExternalLink>{' '}
           które szerzej opisane są w{' '}
-          <Link
-            href={`/renderowanie/next-13`}
-            className="font-medium underline"
-          >
+          <Link href={`/renderowanie/cache`} className="font-medium underline">
             innej sekcji
           </Link>
           . Aby 'świeże' dane były pobierane przy każdym wejściu na stronę,
@@ -47,10 +44,7 @@ const SsrCodeBlock = () => {
         <CodeBlock code={dynamicOptions} />
         <p>
           Sprawdź jak działają{' '}
-          <Link
-            href={`/renderowanie/next-13`}
-            className="font-medium underline"
-          >
+          <Link href={`/renderowanie/cache`} className="font-medium underline">
             tutaj
           </Link>
         </p>

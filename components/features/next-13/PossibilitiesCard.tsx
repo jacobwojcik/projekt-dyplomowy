@@ -4,7 +4,7 @@ const PossibilitiesCard = () => {
   return (
     <Card className="mx-4 mt-6 max-w-7xl xl:mx-0 ">
       <CardHeader>
-        <CardTitle>Jakie możliwości daje Next 13?</CardTitle>
+        <CardTitle>Jak kontrolować zachowanie danych an stronie?</CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
         <p>

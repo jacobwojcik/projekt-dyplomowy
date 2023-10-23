@@ -29,10 +29,7 @@ const IsrCodeBlock = () => {
         <CodeBlock code={fetchWitchRevalidate} highlight="1" />
         <span>
           Jeśli chcesz dowiedzieć się więcej o opcjach rewalidacji, zajrzyj{' '}
-          <Link
-            href={`/renderowanie/next-13`}
-            className="font-medium underline"
-          >
+          <Link href={`/renderowanie/cache`} className="font-medium underline">
             tutaj
           </Link>
           .
