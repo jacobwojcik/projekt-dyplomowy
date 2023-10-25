@@ -6,11 +6,12 @@ import Link from 'next/link';
 
 const TimesCodeBlock = () => {
   return (
-    <section className="grid grid-cols-3 gap-6 my-4 mx-6 2xl:mx-0">
+    <section className="grid grid-cols-3 gap-6 my-4 mx-6 xl:mx-0">
       <div className="col-span-3 flex flex-col gap-4">
         <p>
-          Dane są odświeżane przez użycie opcji <Code>revalidate</Code>.
-          Wykonane żadania wyglądaja mnie więcej tak:
+          Dane są odświeżane przez użycie opcji <Code>revalidate</Code> z
+          rozszerzonego natywnego Fetch API. Wykonane żądania wyglądaja mnie
+          więcej tak:
         </p>
         <CodeBlock code={fetchTimeTables} />
       </div>

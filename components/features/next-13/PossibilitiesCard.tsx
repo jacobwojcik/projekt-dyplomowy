@@ -1,10 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+import PageRefresh from '../rendering/PageRefresh';
 
 const PossibilitiesCard = () => {
   return (
     <Card className="mx-4 mt-6 max-w-7xl xl:mx-0 ">
       <CardHeader>
-        <CardTitle>Jak kontrolować zachowanie danych an stronie?</CardTitle>
+        <CardTitle>Jak kontrolować zachowanie danych na stronie?</CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
         <p>
@@ -30,7 +31,7 @@ const PossibilitiesCard = () => {
               <span className="font-medium text-green-600">
                 On-demand (na żądanie)
               </span>{' '}
-              - na przyład podczas przesłania formularza{' '}
+              - na przykład podczas przesłania formularza{' '}
             </li>
           </ul>
         </div>
@@ -43,9 +44,14 @@ const PossibilitiesCard = () => {
 
         <p>
           W poniższym przykładzie czas, który pobierany jest z zewnętrznego API,
-          w Nowym Jorku odświeżany jest co 30 sekund, natomiast czas w Warszawie
-          co 10 sekund, aby zaobserwować te zmiany odśwież stronę.{' '}
+          żądanie z którego dostajemy czas w Nowym Jorku rewalidowane jest co 30
+          sekund, natomiast żądanie z czasem w Warszawie co 10 sekund, aby
+          zaobserwować te zmiany odśwież kilkurotnie stronę. w różnych odstępach
+          czasu.
         </p>
+        <div>
+          <PageRefresh />
+        </div>
       </CardContent>
     </Card>
   );
