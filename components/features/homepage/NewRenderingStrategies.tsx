@@ -3,6 +3,7 @@ import React from 'react';
 
 import { Badge } from '../../ui/Badge';
 import { ButtonLink } from '../../ui/ButtonLink';
+import NewRenderingStrategiesImg from './NewRenderingStrategiesImg';
 
 const badges = ['SEO', 'Rendering', 'Rewalidacja', 'Cache', 'Web'];
 
@@ -42,14 +43,7 @@ const NewRenderingStrategies = () => {
         </div>
 
         <div className="flex items-center justify-center p-6 md:p-12">
-          <Image
-            alt="Web development"
-            width={520}
-            height={130}
-            className="h-4/5 object-contain"
-            sizes="(max-width: 768px) 80vw, 33vw"
-            src="/images/web.png"
-          />
+          <NewRenderingStrategiesImg />
         </div>
       </div>
     </div>

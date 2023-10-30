@@ -5,9 +5,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <script
         dangerouslySetInnerHTML={{
           __html: `
-              const end = Date.now() + 1000;  
+              const end = Date.now() + 2000;  
               while (Date.now() < end) {
-                  // Block thread for 1 second
+                  // Block thread for 2 seconds
               }
               console.log('Zewnętrzny skrypt został zakończony!');
               `,

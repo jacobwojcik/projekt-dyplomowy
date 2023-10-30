@@ -13,14 +13,13 @@ const HowToOptimize = () => {
         Jak optymalizować wydajność strony?
       </h2>
       <div className="flex gap-6 items-center flex-col lg:flex-row my-6">
-        <span className="sm:max-w-lg">
-          W dzisiejszym zdominowanym przez wyszukiwarki świecie, dobrze
-          przemyślana strategia SEO jest nie tylko narzędziem do osiągnięcia
-          wyższej pozycji w wynikach wyszukiwania, lecz także kluczem do
-          zdobycia zaufania użytkowników. Poprzez optymalizację treści,
-          struktury i technicznych aspektów witryny, można nie tylko zwiększyć
-          jej widoczność, ale również skonstruować solidne fundamenty dla
-          długoterminowego sukcesu w świecie online.
+        <span className="sm:max-w-lg text-center">
+          Dobrze przemyślana strategia SEO jest nie tylko narzędziem do
+          osiągnięcia wyższej pozycji w wynikach wyszukiwania, lecz także
+          kluczem do zdobycia zaufania użytkowników. Poprzez optymalizację
+          treści, struktury i technicznych aspektów witryny, można nie tylko
+          zwiększyć jej widoczność, ale również skonstruować solidne fundamenty
+          dla długoterminowego sukcesu w świecie online.
         </span>
         <div className="bg-white shadow-md rounded-lg py-5 w-[250px]">
           <ScoreCounter />
