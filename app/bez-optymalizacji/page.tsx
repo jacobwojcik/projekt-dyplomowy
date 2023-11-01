@@ -7,6 +7,7 @@ import ProductsList from '@/components/features/seo/ProductsList';
 import UnoptimizedHero from '@/components/features/optimization/UnoptimizedHero';
 import UnoptimizedResults from '@/components/features/optimization/UnoptimizedResults';
 import SectionNavigation from '@/components/shared/SectionNavigation';
+import OptimizeInstructions from '@/components/features/optimization/CodeBlocks/OptimizeInstructions';
 
 export const metadata: Metadata = {
   title: '',
@@ -17,25 +18,15 @@ export default async function Page() {
   return (
     <main className="mx-auto my-6 max-w-7xl font-roboto">
       <UnoptimizedHero />
+
       <ProductsList />
 
-      <section className="m-4 mt-8 ">
-        <h3 className="text-lg font-semibold">Niepoprawne linki</h3>
-        <div className="flex items-center justify-center gap-6">
-          <a className="rounded-lg bg-black px-3 py-2 text-white hover:opacity-75">
-            Niedziałający link
-          </a>
-          <a
-            href="/"
-            className="rounded-lg bg-black px-3 py-2 text-white hover:opacity-75"
-          >
-            Start
-          </a>
-        </div>
-      </section>
       <BlogPostsUnoptimized />
 
       <UnoptimizedResults />
+
+      <OptimizeInstructions />
+
       <SectionNavigation
         navOptions={{
           nextHref: '/z-optymalizacja',

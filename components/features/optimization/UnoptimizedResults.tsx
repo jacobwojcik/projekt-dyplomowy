@@ -8,7 +8,7 @@ const UnoptimizedResults = () => {
       <h1 className="mb-6 text-lg font-semibold">Wyniki obecnej podstrony</h1>
       <div className="w-full grid grid-col-1 xl:grid-cols-2 gap-6">
         <div className="flex flex-col gap-2">
-          <span>
+          <span className="my-2">
             Wynik w{' '}
             <ExternalLink
               name="PageSpeed Insights"

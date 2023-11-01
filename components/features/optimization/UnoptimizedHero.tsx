@@ -17,15 +17,14 @@ const UnoptimizedHero = () => {
     <div className="mx-4 flex flex-col gap-6 md:col-span-1">
       <div className="grid w-full grid-cols-1 rounded-lg border border-zinc-200 p-4 text-center md:grid-cols-3">
         <div className="col-span-1 flex flex-col justify-center">
-          <h1 className="mb-2 text-2xl font-semibold">Czego nie robić?</h1>
+          <h1 className="mb-2 text-2xl font-semibold">
+            Jak zoptymalizować stronę?
+          </h1>
           <span className="text-xs sm:text-base">
-            Aktualna strona jest przykładem tego jak{' '}
-            <span className="font-semibold">NIE</span> budować nowoczesnych
-            witryn internetowych. Złe praktyki są widoczne już na pierwszy rzut
-            oka. Słabe user experience (doświadczenia użytkownika) jest
-            spowodowane prze długie wczytywanie treści. Poniżej znajdziesz
-            wyniki testów SEO, które są powszechnie używanymi metrykami do
-            określania wydajności stron internetowych.
+            Wchodząc na obecną stronę możesz zauważyć długi czas ładowania, co
+            na niego wpływa? Poniżej znajdziesz wskazówki które pozwolą Ci
+            usprawnić jakość doświadczeń użytkowników oraz poprawić wyniki SEO
+            dzięki którym poprawisz wyniki wyszukiwania twoich aplikacji!
           </span>
         </div>
         <div className="col-span-2 mx-auto flex w-full sm:w-2/3 flex-col items-center justify-center gap-6 h-[400px] sm:h-auto">

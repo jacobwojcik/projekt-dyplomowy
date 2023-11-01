@@ -7,7 +7,7 @@ import ListStreaming from '@/components/features/streaming/ListStreaming';
 import SeoResults from '@/components/features/seo/SeoResults';
 import SectionNavigation from '@/components/shared/SectionNavigation';
 
-// export const dynamic = 'force-static';
+export const dynamic = 'force-static';
 
 export default async function Page() {
   return (
