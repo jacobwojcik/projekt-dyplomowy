@@ -9,6 +9,8 @@ import UnoptimizedResults from '@/components/features/optimization/UnoptimizedRe
 import SectionNavigation from '@/components/shared/SectionNavigation';
 import OptimizeInstructions from '@/components/features/optimization/CodeBlocks/OptimizeInstructions';
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: '',
   description: '',

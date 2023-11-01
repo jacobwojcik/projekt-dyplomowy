@@ -16,7 +16,7 @@ const BlogPostsUnoptimized = () => {
   useEffect(() => {
     const fetchBlogPostsData = async () => {
       try {
-        const res = await fetch(`${host}/api/posts`);
+        const res = await fetch(`${host}/api/posts`, { cache: 'no-store' });
         const data = await res.json();
         setBlogPosts(data);
       } catch (error) {

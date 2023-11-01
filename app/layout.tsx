@@ -19,7 +19,7 @@ export const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: 'Jak tworzyć aplikacje webowe?',
+  title: 'Nowoczesne aplikacje webowe',
   description:
     'Tworzenie i optymalizacja nowoczesnych aplikacji webowych przy użyciu Next.js',
 };
