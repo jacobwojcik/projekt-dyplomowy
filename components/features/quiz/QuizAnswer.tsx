@@ -18,7 +18,7 @@ const QuizAnswer = ({
 }: Props) => {
   return (
     <div
-      className={`w-full border rounded-md px-5 h-[60px] text-left my-1 flex justify-between items-center
+      className={`w-full border rounded-md px-5 h-[80px] text-left my-1 flex justify-between items-center
       ${isCorrect ? 'border-green-500 text-green-500 hover:white' : ''} ${
         isSelected && !isCorrect
           ? 'border-red-500 text-red-500 hover:bg-white'

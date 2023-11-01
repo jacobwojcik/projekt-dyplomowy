@@ -6,7 +6,7 @@ interface Props {
 
 const QuizQuestion = ({ question }: Props) => {
   return (
-    <div className="h-[80px] flex justify-center items-start">
+    <div className="h-[80px] flex justify-center items-center">
       <h2>{question}</h2>
     </div>
   );

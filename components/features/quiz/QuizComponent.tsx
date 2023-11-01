@@ -63,7 +63,7 @@ const QuizComponent = () => {
         </div>
       )}
       {step === 1 && (
-        <div className="col-span-3 flex flex-col items-center justify-around p-0 md:py-4 h-full">
+        <div className="col-span-3 flex flex-col items-center justify-around p-0 md:pb-4 h-full">
           <QuizQuestion question={questions[questionNumber].question} />
           {questions[questionNumber].answers.map((answer, index) => (
             <QuizAnswer

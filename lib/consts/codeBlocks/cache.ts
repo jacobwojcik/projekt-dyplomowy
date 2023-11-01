@@ -23,15 +23,15 @@ export const fetchTimeTables = ` const newYorkDateTime = await fetch(
   export const dynamic = 'force-dynamic';
 
   /*
-  * Wymusza statyczne rednerowanie i "cache'owanie" oraz zwraca puste wartości
+  * Wymusza statyczne renderowanie i "cache'owanie" oraz zwraca puste wartości
   * dla dynamicznych funkcji (na przykład korzystających z ciasteczek)
   */
   export const dynamic = 'force-static';
 
   /*
-  * Wymusza statyczne rednerowanie i "cache'owanie" oraz wyrzuca błąd jeśli jakkikolwiek
+  * Wymusza statyczne renderowanie i "cache'owanie" oraz wyrzuca błąd jeśli jakkikolwiek
   * komponent używa dynamicznych funkcji (na przykład korzysta z ciasteczek)
-  *  lub lub używa dynamicznych danych.
+  * lub lub używa dynamicznych danych.
   */
   export const dynamic = 'error';
   `
