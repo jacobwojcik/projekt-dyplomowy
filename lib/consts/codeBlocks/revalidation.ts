@@ -1,0 +1,1 @@
+export const revalidatePath =`revalidatePath('/path-to-revalidate');`

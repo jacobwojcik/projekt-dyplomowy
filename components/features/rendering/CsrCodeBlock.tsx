@@ -8,7 +8,7 @@ const CsrCodeBlock = () => {
     <section className="grid grid-cols-3 gap-6 my-4 mx-6 2xl:mx-0">
       <div className="col-span-3 flex flex-col gap-4">
         <p>
-          W Next.js w wersji 13, używając rekomendowanego{' '}
+          W najnowszych wersjach Next.js używając rekomendowanego{' '}
           <ExternalLink
             name={"App Router'a"}
             href={'https://nextjs.org/docs/app'}

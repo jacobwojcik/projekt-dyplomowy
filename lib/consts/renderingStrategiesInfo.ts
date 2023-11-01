@@ -64,8 +64,8 @@ export const renderingStrategiesInfo: Record<string, RenderingStrategiesInfo> =
 export const nextFeaturesInfo: Record<string, RenderingStrategiesInfo> = {
   streaming: {
     title: 'Streaming + Suspense',
-    description: `Streaming umożliwia częściowe renderowanie i przesyłanie elementów interfejsu użytkownika z serwera do klienta. W rezultacie użytkownik może natychmiastowo zobaczyć i korzystać z kluczowych fragmentów strony, podczas gdy pozostała treść jest nadal ładowana. To pozwala uniknąć oczekiwania na pełne załadowanie całej strony przed możliwością interakcji. 
-      W tym przypadku czas pobierania produktów z drugiego rzędu jest sztucznie wydłużony, korzystajac z "streamingu" użytkownik nie musi czekać aż to żądanie (które wykonywane jest po stronie serwera) zostanie zakończone!
+    description: ` Streaming pozwala podzielić kod HTML strony na mniejsze części i stopniowo wysyłać je z serwera do klienta. W rezultacie użytkownik może natychmiastowo zobaczyć i korzystać z kluczowych fragmentów strony, podczas gdy pozostała treść jest nadal ładowana. To pozwala uniknąć oczekiwania na pełne załadowanie całej strony przed możliwością interakcji. 
+      W tym przypadku czas pobierania produktów z drugiego rzędu jest sztucznie wydłużony, a podczas ich przesyłania użytkownik widzi zastępczy komponent ładowania. Jest to szczególnie korzystne, gdy chcemy zapobiec blokowaniu renderowania strony przez długie żądania danych i uzyskać wyższe wyniki SEO.
       `,
   },
 };

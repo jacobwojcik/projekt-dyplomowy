@@ -12,7 +12,7 @@ const WhatsMore = () => {
         </h3>
         <span className="lg:max-w-md text-center">
           Nowoczesne aplikacje muszą nie tylko być atrakcyjne wizualnie, ale
-          przede wszystkim dynamiczne i wydajne. Next.js dostarcza wiele
+          przede wszystkim dynamiczne i wydajne. Next.js dostarcza wielu
           rozwiązań ktore pomagają w budowaniu skalowalnym aplikacji które łączą
           w sobie najlepsze praktyki programistyczne z nowatorskim podejściem.
         </span>

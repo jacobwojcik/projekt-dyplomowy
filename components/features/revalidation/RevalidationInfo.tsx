@@ -1,4 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+import Link from 'next/link';
+import PageRefresh from '../rendering/PageRefresh';
 
 const RevalidationInfo = () => {
   return (
@@ -7,19 +9,31 @@ const RevalidationInfo = () => {
         <CardTitle>Statyczne generowanie a rewalidacja</CardTitle>
       </CardHeader>
       <CardContent>
-        Aktualna podstrona łączy w sobie statyczną naturę z dynamicznymi
-        możliwościami odświeżania treści. Strona jest regenerowana co 5 minut
-        jak w przypadku ISR. Jednak w tym wypadku po dodaniu nowego zadania
-        użytkownik nie zobaczy nowej treśći!
-        <br />
-        <br />Z pomocą przychodzi funkcja
-        <code className="rounded-lg bg-zinc-100/50 px-2 py-1 text-sm text-green-500">
-          &lt;revalidatePath&gt;
-        </code>{' '}
-        dzięki której mamy zdolność do natychmiastowej rewalidacji danych na
-        żądanie. Dzięki temu, kiedy nowe zadania są dodawane, strona od razu
-        poddawana jest procesowi rewalidacji, a zmiany stają się widoczne dla
-        użytkowników niemalże natychmiastowo.
+        <p>
+          Statycznie wygenerowane strony mają swoje korzyści, takie jak szybkość
+          ładowania. Jednak przynosi to ograniczenia związane z problemem
+          odświeżania treści. Z pomocą przychodzi rewalidacja czyli ponowne
+          wygenerowanie strony.
+        </p>
+        <p className="mb-2">
+          Poza{' '}
+          <Link href={'/renderowanie/cache'} className="font-medium underline">
+            odświeżaniem opartym na czasie
+          </Link>{' '}
+          można skorzystać również z rewalidacji na żądanie. Podstrona na której
+          się znajdujesz zostałą wygenerowana statycznie oraz jest rewalidowana
+          co 5 minut. Odśwież stronę aby sprawdzić czas (widoczny poniżej) o
+          której została wygenerowana ostatnia wersja. Po ponownym odświeżeniu
+          czas nie powinien się zmienić (kolejna wersja zostanie wygenerowana za
+          5 minut).
+        </p>
+        <PageRefresh />
+        <p className="mt-2">
+          W tym przypadku dobrym pomysłem byłaby dodatkowa rewalidacja na
+          żądanie, które zostałaby wykonana podczas dodawania nowego zadania.
+          Dzięki temu nowa wersja będzie zawierała również najnowsze zadanie!
+          Spróbuj je teraz dodać.
+        </p>
       </CardContent>
     </Card>
   );

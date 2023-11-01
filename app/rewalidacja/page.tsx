@@ -1,4 +1,5 @@
 import AddTodoSheet from '@/components/features/revalidation/AddTodoSheet';
+import RevalidationCodeBlock from '@/components/features/revalidation/RevalidationCodeBlock';
 import RevalidationInfo from '@/components/features/revalidation/RevalidationInfo';
 import TodosList from '@/components/features/revalidation/TodosList';
 import SectionNavigation from '@/components/shared/SectionNavigation';
@@ -16,6 +17,8 @@ export default async function Page() {
   const formattedTime = formatTime(time.datetime);
   return (
     <div className="mx-auto my-6 flex max-w-7xl flex-col">
+      <RevalidationInfo />
+
       <div className="flex w-full flex-col px-4 ">
         <div className="f flex items-center justify-between gap-6 ">
           <span className="flex flex-col sm:my-6  sm:flex-row sm:items-center sm:gap-4">
@@ -27,7 +30,8 @@ export default async function Page() {
         <TodosList todos={todos} />
       </div>
 
-      <RevalidationInfo />
+      <RevalidationCodeBlock />
+
       <SectionNavigation
         navOptions={{
           prevHref: '/streaming',

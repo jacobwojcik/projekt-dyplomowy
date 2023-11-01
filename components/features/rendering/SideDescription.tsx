@@ -14,10 +14,11 @@ import PageRefresh from './PageRefresh';
 
 interface Props {
   information: RenderingStrategiesInfo;
+  footer?: string;
   children?: ReactNode;
 }
 
-const SideDescription = ({ information, children }: Props) => {
+const SideDescription = ({ information, footer, children }: Props) => {
   const { title, description, pros, cons, content } = information;
   return (
     <div>
@@ -65,8 +66,9 @@ const SideDescription = ({ information, children }: Props) => {
         </CardContent>
         <CardFooter className="flex flex-col items-start">
           <p className=" text-sm mb-2">
-            Kliknij przycisk lub odśwież stronę żeby sprawdzić czy i w jaki
-            sposób odświeża się czas.
+            {footer
+              ? footer
+              : 'Kliknij przycisk lub odśwież stronę żeby sprawdzić czy i w jaki sposób odświeża się czas'}
           </p>
           <PageRefresh />
         </CardFooter>

@@ -9,12 +9,18 @@ import ProductsStreamingLong from '@/components/features/streaming/ProductsStrea
 import { Separator } from '@/components/ui/Separator';
 import { nextFeaturesInfo } from '@/lib/consts/renderingStrategiesInfo';
 import SectionNavigation from '@/components/shared/SectionNavigation';
+import StreamingCodeBlock from '@/components/features/streaming/StreamingCodeBlock';
 
 export default async function Page() {
   return (
     <div className="mx-auto my-6 max-w-7xl">
       <div className="mx-6 flex flex-col gap-8 lg:flex-row xl:mx-0">
-        <SideDescription information={nextFeaturesInfo.streaming} />
+        <SideDescription
+          information={nextFeaturesInfo.streaming}
+          footer={
+            'Kliknij przycisk lub odśwież stronę żeby zobaczyć zastępczy komponent ładowania produktów.'
+          }
+        />
         <div>
           <Suspense>
             <CurrentTime />
@@ -33,6 +39,9 @@ export default async function Page() {
       <Suspense>
         <BlogPosts />
       </Suspense>
+
+      <StreamingCodeBlock />
+
       <div className="w-full">
         <SectionNavigation
           navOptions={{
