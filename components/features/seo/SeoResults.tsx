@@ -34,7 +34,7 @@ const SeoResults = () => {
           />
           <ExternalLink
             name="Link do wyników"
-            href="https://pagespeed.web.dev/analysis/https-jw-praca-dyplomowa-vercel-app-z-optymalizacja/e8cflyml5h?form_factor=mobile"
+            href="https://pagespeed.web.dev/analysis/https-nowoczesne-aplikacje-webowe-vercel-app-z-optymalizacja/5jjpsjm58l?form_factor=desktop"
           />
         </div>
         <div className="w-full xl:px-6">

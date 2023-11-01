@@ -16,16 +16,16 @@ const UnoptimizedResults = () => {
             />
           </span>
           <img
-            src="/images/unoptimized-seo-1.png"
+            src="/images/unoptimized-seo-11.png"
             className="p-6 border rounded-md"
           />
           <img
-            src="/images/unoptimized-seo-2.png"
+            src="/images/unoptimized-seo-22.png"
             className="p-6 border rounded-md"
           />
           <ExternalLink
             name=" Link do wyników"
-            href="https://pagespeed.web.dev/analysis/https-jw-praca-dyplomowa-vercel-app-bez-optymalizacji/mw5rpezhr8?form_factor=mobile"
+            href="https://pagespeed.web.dev/analysis/https-nowoczesne-aplikacje-webowe-vercel-app-bez-optymalizacji/eakbn5gpgm?form_factor=mobile"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -33,11 +33,11 @@ const UnoptimizedResults = () => {
             Wynik w Lighthouse (narzędzie wbudowane w przeglądarke):
           </span>
           <img
-            src="/images/unoptimized-seo-lighthouse-1.png"
+            src="/images/unoptimized-seo-lighthouse-11.png"
             className="p-6 border rounded-md"
           />
           <img
-            src="/images/unoptimized-seo-lighthouse-2.png"
+            src="/images/unoptimized-seo-lighthouse-22.png"
             className="p-6 border rounded-md"
           />
         </div>
