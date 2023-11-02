@@ -6,7 +6,7 @@ const SeoResults = () => {
   return (
     <div className="mx-4 xl:mx-0">
       <h3 className="my-4">Wyniki obecnej podstrony:</h3>
-      <div className="w-full grid grid-col-1 xl:grid-cols-2 gap-6">
+      <div className="w-full  flex flex-col xl:grid xl:grid-cols-2 gap-6">
         <div className="flex flex-col gap-2">
           <Image
             src={'/images/seo-1.png'}

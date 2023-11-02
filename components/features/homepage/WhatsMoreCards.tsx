@@ -12,11 +12,12 @@ const WhatsMoreCards = () => {
         whileInView="show"
         variants={showUp}
         viewport={{ once: true }}
+        className="w-full"
       >
         <LinkCard
           href={`/streaming`}
           title="Streaming"
-          imageUrl="/images/streaming.png"
+          imageUrl="/images/server-streaming.png"
           aria-label="Streaming Dlaczego?"
         >
           Jak "przyśpieszyć" serwer?
@@ -27,11 +28,12 @@ const WhatsMoreCards = () => {
         whileInView="show"
         variants={showUpDelayed}
         viewport={{ once: true }}
+        className="w-full"
       >
         <LinkCard
           href={`/rewalidacja`}
           title="Rewalidacja"
-          imageUrl="/images/rewalidacja.png"
+          imageUrl="/images/revalidation.png"
           aria-label="Rewalidacja"
         >
           Czyli dynamiczna statyczność

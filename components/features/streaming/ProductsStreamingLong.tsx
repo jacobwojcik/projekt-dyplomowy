@@ -3,10 +3,11 @@ import { getProducts } from '@/lib/queries';
 import ProductCard from '../../shared/ProductCard';
 
 const delay = async () => {
-  return new Promise((resolve) => setTimeout(resolve, 3000));
+  return new Promise((resolve) => setTimeout(resolve, 30000));
 };
 
 const ProductsStreamingLong = async () => {
+  // Delay the request
   await delay();
   const products = await getProducts(3, 3);
 

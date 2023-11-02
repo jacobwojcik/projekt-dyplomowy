@@ -50,6 +50,7 @@ const QuizComponent = () => {
         <div className="col-span-1 flex flex-col items-center justify-center p-0 md:py-4 h-full">
           <Image
             src="/images/quiz-start.png"
+            priority
             width={450}
             height={450}
             sizes="420px"

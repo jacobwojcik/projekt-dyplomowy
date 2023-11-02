@@ -37,9 +37,9 @@ const SectionNavigation = ({ navOptions }: Props) => {
           {prevHref && (
             <Link
               href={prevHref}
-              className="flex text-lg items-center text-center animate-bounce-right-left"
+              className="flex text-xs sm:text-lg items-center text-center animate-bounce-right-left"
             >
-              <ArrowLeftIcon className="h-6 w-6 text-black mr-2" />
+              <ArrowLeftIcon className="h-3 w-3 sm:h-6 sm:w-6 text-black mr-2" />
               {prevName}
             </Link>
           )}
@@ -47,9 +47,10 @@ const SectionNavigation = ({ navOptions }: Props) => {
         {nextHref && (
           <Link
             href={nextHref}
-            className="flex text-lg items-center text-center animate-bounce-left-right"
+            className="flex text-xs sm:text-lg items-center text-center animate-bounce-left-right"
           >
-            {nextName} <ArrowRightIcon className="h-6 w-6 text-black ml-2" />
+            {nextName}{' '}
+            <ArrowRightIcon className="h-3 w-3 sm:h-6 sm:w-6 text-black ml-2" />
           </Link>
         )}
       </nav>

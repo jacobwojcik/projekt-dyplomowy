@@ -22,7 +22,7 @@ const LinkCard = ({ href, title, imageUrl, children }: Props) => {
             fill
             src={imageUrl}
             alt={title}
-            className="border-b border-zinc-300 object-cover object-left-top"
+            className="border-b border-zinc-300 object-cover object-left-top rounded-t-lg"
             sizes="(max-width: 768px) 80vw, 180px"
           />
         </div>
