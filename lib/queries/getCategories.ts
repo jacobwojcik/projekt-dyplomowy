@@ -1,9 +1,8 @@
 import type { Category } from '@/types';
 
-import { createSupabaseClient } from '../utils';
+import { supabase } from '../utils';
 
 export const getCategories = async (): Promise<Category[]> => {
-  const supabase = createSupabaseClient();
 
   const { data: categories } = await supabase
     .from('category')

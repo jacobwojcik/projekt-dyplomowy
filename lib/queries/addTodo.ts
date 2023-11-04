@@ -2,12 +2,12 @@ import { revalidatePath } from 'next/cache';
 
 import type { Todo } from '@/types';
 
-import { createSupabaseClient } from '../utils';
+import { supabase } from '../utils';
 
 export const addTodo = async (
   newTodo: Pick<Todo, 'name' | 'category' | 'isDone' | 'dueDate'>,
 ): Promise<Todo | null> => {
-  const supabase = createSupabaseClient();
+  
 
   const { data, error } = await supabase
     .from('todo')

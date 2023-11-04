@@ -1,10 +1,8 @@
 import type { Todo } from '@/types';
-
-import { createSupabaseClient } from '../utils';
+import { supabase } from '../utils';
 
 export const getTodos = async (): Promise<Todo[]> => {
-  const supabase = createSupabaseClient();
-
+  
   const { data: todos } = await supabase
     .from('todo')
     .select('*')
