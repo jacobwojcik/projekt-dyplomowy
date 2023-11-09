@@ -11,6 +11,8 @@ import { nextFeaturesInfo } from '@/lib/consts/renderingStrategiesInfo';
 import SectionNavigation from '@/components/shared/SectionNavigation';
 import StreamingCodeBlock from '@/components/features/streaming/StreamingCodeBlock';
 
+export const dynamic = 'force-dyanmic';
+
 export default async function Page() {
   return (
     <div className="mx-auto my-6 max-w-7xl">
