@@ -11,7 +11,7 @@ import { nextFeaturesInfo } from '@/lib/consts/renderingStrategiesInfo';
 import SectionNavigation from '@/components/shared/SectionNavigation';
 import StreamingCodeBlock from '@/components/features/streaming/StreamingCodeBlock';
 
-export const dynamic = 'force-dyanmic';
+export const dynamic = 'force-dynamic';
 
 export default async function Page() {
   return (
