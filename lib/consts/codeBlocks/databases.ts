@@ -45,7 +45,7 @@ export async function GET(request: Request) {
 
 
 export const componentDbCall = `export default function Page() {
-  const data = await supabase.from('products').select(*);
+  const data = await supabase.from('products').select('*');
 
   return (
     <section>
