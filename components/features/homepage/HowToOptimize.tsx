@@ -6,7 +6,7 @@ import ScoreCounter from '@/components/shared/ScoreCounter';
 const HowToOptimize = () => {
   return (
     <div
-      className="flex min-h-[660px] flex-col items-center justify-center bg-zinc-100/50 px-4 py-8"
+      className="flex min-h-[660px] flex-col items-center justify-center bg-white px-4 py-8"
       id="optymalizacja"
     >
       <h2 className="mb-3 text-center text-3xl font-semibold">

@@ -6,7 +6,7 @@ import QuizImg from './QuizImg';
 
 const QuizSection = () => {
   return (
-    <div className="flex min-h-[660px] flex-col items-center justify-center bg-zinc-100/50 px-4 py-8">
+    <div className="flex min-h-[660px] flex-col items-center justify-center bg-white px-4 py-8">
       <div className="flex flex-col md:grid md:grid-cols-2 max-w-5xl">
         <div>
           <h2 className="text-center text-3xl font-semibold">

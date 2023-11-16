@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 
 import { Badge } from '../../ui/Badge';
@@ -9,7 +8,7 @@ const badges = ['SEO', 'Rendering', 'Rewalidacja', 'Cache', 'Web'];
 
 const NewRenderingStrategies = () => {
   return (
-    <div className="flex min-h-[660px] items-center justify-center py-8">
+    <div className="flex min-h-[660px] items-center bg-zinc-100/50 justify-center py-8">
       <div className="grid max-w-5xl grid-cols-1 gap-6 px-4 md:grid-cols-2">
         <div className="flex flex-col justify-center">
           <h2 className="mb-3 text-center text-3xl font-semibold">
