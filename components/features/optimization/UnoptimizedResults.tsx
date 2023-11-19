@@ -45,9 +45,9 @@ const UnoptimizedResults = () => {
 
       <div className="my-6">
         <p>
-          Korzystając z wyżej wymienionych narzędzie dostajemy również
-          podpowiedzi w jaki sposób poprawić wydajnośc danej strony. Na przykład
-          przy obecnym przykładzie wyglądają one następująco:
+          Korzystając z wyżej wymienionych narzędzi dostajemy również
+          podpowiedzi w jaki sposób poprawić wydajność danej strony. Dla obecnej
+          strony wyglądają one następująco:
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 my-2">
           {' '}

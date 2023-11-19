@@ -9,7 +9,7 @@ const seo = [
   {
     title: 'Zdjęcia',
     content:
-      'Używaj nowoczesnych formatów zapewniających lepszą kompresję, takich jak WebP czy AVIF. Korzystając z Next.js zamiast standardowego tagu <img>, użyj <Image/>, definiując atrybuty takie jak width i height. Komponent ten obsługuje leniwe ładowanie obrazów, poprawiając wydajność. Możesz także konfigurować zewnętrzne źródła obrazów, takie jak Cloudinary.',
+      'Używaj nowoczesnych formatów zapewniających lepszą kompresję, takich jak WebP czy AVIF. Korzystając z Next.js zamiast standardowego tagu <img>, użyj <Image/>, definiując atrybuty takie jak width i height. Komponent ten obsługuje leniwe ładowanie obrazów, poprawiając wydajność. Możesz także konfigurować zewnętrzne źródła obrazów.',
   },
   {
     title: 'Font',

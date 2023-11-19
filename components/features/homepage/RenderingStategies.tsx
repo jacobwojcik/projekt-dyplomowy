@@ -48,7 +48,7 @@ const RenderingStategies = () => {
       </h2>
       <div className="rounded-lg border bg-card shadow-sm flex flex-col items-center my-8 p-6 max-w-5xl">
         <p className="text-center">
-          Renderowanie to proces przekształcenie danych w wizualny obraz, który
+          Renderowanie to proces przekształcania danych w wizualny obraz, który
           widzimy w przeglądarce. W uproszczeniu, gdy mówimy o renderowaniu
           strony, chodzi o to, jak i gdzie strona jest "budowana" przed jej
           wyświetleniem. Dwa główne podejścia do tego procesu to renderowanie po

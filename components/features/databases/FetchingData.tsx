@@ -14,7 +14,7 @@ const FetchingData = () => {
           <p>
             Next.js pozwala tworzyć własne API, nazywane{' '}
             <Code>Route Handler'ami</Code>. Aby stworzyć przykładowy endpoint,
-            wystarczy stworzyć folder(którego nazwa będzię określała ścieżkę
+            wystarczy stworzyć folder (którego nazwa będzię określała ścieżkę
             endpointu) z plikiem <Code>route.ts</Code> w folderze{' '}
             <Code>/app/api</Code>
           </p>

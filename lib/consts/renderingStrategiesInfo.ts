@@ -20,7 +20,7 @@ export const renderingStrategiesInfo: Record<string, RenderingStrategiesInfo> =
     csr: {
       title: 'CSR - Client Side Rendering',
       description:
-        `Client-Side Rendering (CSR), czyli renderowanie po stronie klienta, polega na generowaniu treści strony bezpośrednio w przeglądarce użytkonika. Klient wysyła żądanie do serwera o minimalny plik HTML, który zawiera niezbędne pliki JavaScript i CSS. Gdy klient wczytuje pliki, kod JavaScript jest wykonywany, co powoduje wyrenderowanie treści w przeglądarce. Wtedy strona staje się widoczna i w pełni interaktywna.
+        `Client-Side Rendering (CSR), czyli renderowanie po stronie klienta, polega na generowaniu treści strony bezpośrednio w przeglądarce użytkownika. Klient wysyła żądanie do serwera po plik HTML, który zawiera niezbędne pliki JavaScript i CSS. Gdy klient wczytuje pliki, kod JavaScript jest wykonywany, co powoduje wyrenderowanie treści w przeglądarce. Wtedy strona staje się widoczna i w pełni interaktywna.
          Czas widoczny nad listą produktów określa moment w którym dane zostały załadowane na stronę. CSR powinno używać się w dynamicznych aplikacjach,  w których nie zależy nam na dobrym wyniku SEO (Search Engine Optimization - proces optymalizacji strony internetowej w celu poprawy jej widoczności w wynikach wyszukiwania). Przykładem może być panel administratora lub aplikacja społecznościowa.`,
       pros: [
         'Szybkość',
@@ -36,7 +36,7 @@ export const renderingStrategiesInfo: Record<string, RenderingStrategiesInfo> =
     ssg: {
       title: 'SSG - Static Site Generation',
       description:
-        'Static Site Generation (SSG) to technika, która umożliwia generowanie pełnych stron internetowych na serwerze w trakcie procesu budowania strony, przed jej dostarczeniem do przeglądarki klienta. Strona jest w pełni statyczna, to znaczy, że dane widoczne na niej zasoby zostały pobrane podczas jej generowania. Widoczny czas to godzina wygenerowania strony a więc po odświeżeniu pozostanie ten sam. SSG jest idealny do stron które sie nie zmieniają i cała zawartość może być wygenerowana w momencie budowania projektu, na przykład: blogi, dokumntacja lub portfolio.',
+        'Static Site Generation (SSG) to technika, która umożliwia generowanie pełnych stron internetowych na serwerze w trakcie procesu budowania strony, przed jej dostarczeniem do przeglądarki klienta. Strona jest w pełni statyczna, to znaczy, że dane widoczne na niej zasoby zostały pobrane podczas jej generowania. Widoczny czas to godzina wygenerowania strony a więc po odświeżeniu pozostanie ten sam. SSG jest idealny do stron które sie nie zmieniają i cała zawartość może być wygenerowana w momencie budowania projektu, na przykład: blogi, dokumentacja lub portfolio.',
       pros: ['Wydajność', 'Bezpieczeństwo', 'Optymalizacja dla SEO'],
       cons: [
         'Czas generowania',

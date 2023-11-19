@@ -14,7 +14,7 @@ const WhatsMore = () => {
           Nowoczesne aplikacje muszą nie tylko być atrakcyjne wizualnie, ale
           przede wszystkim dynamiczne i wydajne. Next.js dostarcza wielu
           rozwiązań ktore pomagają w budowaniu skalowalnym aplikacji które łączą
-          w sobie najlepsze praktyki programistyczne z nowatorskim podejściem.
+          w sobie nowatorskie podejście z najlepszymi wynikami.
         </span>
       </div>
       <WhatsMoreCards />

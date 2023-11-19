@@ -11,7 +11,7 @@ const HomeHero = () => {
         Next.js to nowoczesny, elastyczny framework Reacta do budowania
         aplikacji internetowych. Niezależnie od tego, czy budujesz prostą
         stronę, czy zaawansowaną aplikację, ten framework oferuje narzędzia,
-        które umożliwiają efektywne wykorzystanie jego potencjału. Poniżej
+        które umożliwiają efektywne wykorzystanie jej potencjału. Poniżej
         znajdziesz przykłady rozwiązań, które pokażą Ci, jak w pełni wykorzystać
         możliwości Next.js w praktyce.
       </h2>

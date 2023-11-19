@@ -33,7 +33,7 @@ const DatabasePerformance = async () => {
             się na zastosowaniu powszechnych sposobów optymalizacji zapytań.
             Można na nią wpływać poprzez ustalanie optymalnych struktur danych,
             partycjonowaniem oraz zastosowaniem indeksów. Next.js umożliwia
-            natomiast cache'owania powtarzających się zapytań po stronie
+            natomiast cache'owanie powtarzających się zapytań po stronie
             serwera. Zapytania z wykorzystaniem funkcji <Code>cache</Code> są
             automatycznie deduplikowane, czyli zapytanie wykona się tylko raz,
             unikając niepotrzebnego obciążania bazy danych.

@@ -9,7 +9,7 @@ const SsgCodeBlock = () => {
     <section className="grid grid-cols-3 gap-6 my-4 mx-6 2xl:mx-0">
       <div className="col-span-3 flex flex-col gap-4">
         <p>
-          W Next.js 13 wykonywanie zapytań wygląda tak samo jak dla{' '}
+          Wykonywanie zapytań wygląda tak samo jak dla{' '}
           <Link href={`/renderowanie/ssr`} className="font-medium underline">
             SSR
           </Link>

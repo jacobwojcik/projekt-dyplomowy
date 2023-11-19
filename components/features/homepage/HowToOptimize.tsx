@@ -18,8 +18,8 @@ const HowToOptimize = () => {
           osiągnięcia wyższej pozycji w wynikach wyszukiwania, lecz także
           kluczem do zdobycia zaufania użytkowników. Poprzez optymalizację
           treści, struktury i technicznych aspektów witryny, można nie tylko
-          zwiększyć jej widoczność, ale również skonstruować solidne fundamenty
-          dla długoterminowego sukcesu w świecie online.
+          zwiększyć jej widoczność, ale również poprawić sukces pod kątem
+          biznesowym.
         </span>
         <div className="bg-white shadow-md rounded-lg py-5 w-[250px]">
           <ScoreCounter />

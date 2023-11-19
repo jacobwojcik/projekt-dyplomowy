@@ -31,13 +31,13 @@ export const fetchTimeTables = ` const newYorkDateTime = await fetch(
   /*
   * Wymusza statyczne renderowanie i "cache'owanie" oraz wyrzuca błąd jeśli jakkikolwiek
   * komponent używa dynamicznych funkcji (na przykład korzysta z ciasteczek)
-  * lub lub używa dynamicznych danych.
+  * lub używa dynamicznych danych.
   */
   export const dynamic = 'error';
   `
 
   export const revalidateOptionsDescribed = `/*
-  *  Domyślna wartość. Żądanie nie są rewalidowane.
+  *  Domyślna wartość. Żądania nie są rewalidowane.
   */
   export const revalidate = false;
   

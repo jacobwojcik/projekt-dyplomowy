@@ -14,7 +14,7 @@ const DatabasesCard = () => {
           twoich potrzeb! Next.js doskonale nadaje się do współpracy z bazami
           relacyjnymi, dokumentowymi czy nawet grafowymi. Wybór należy do
           Ciebie! W tej aplikacji wykorzystana została relacyjna baza danych{' '}
-          <Code>PostgreSQL</Code> wykorzystana za pośrednictwem platformy{' '}
+          <Code>PostgreSQL</Code> za pośrednictwem platformy{' '}
           <ExternalLink href={'https://supabase.com/'}>Supabase</ExternalLink>.
           Poniżej znajdziesz przykład połączenia się do niej za pośrednictwem
           aplikacji Next.js a także przykłady wykorzystania.
