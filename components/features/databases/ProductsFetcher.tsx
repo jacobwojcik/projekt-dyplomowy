@@ -21,7 +21,7 @@ const ProductsFetcher = () => {
   };
 
   return (
-    <div className="flex items-center gap-8 my-6 min-h-[300px]">
+    <div className="flex items-center gap-8 my-6 min-h-[300px] mx-4 max-w-7xl xl:mx-0">
       <div>
         <Button
           onClick={fetchProducts}

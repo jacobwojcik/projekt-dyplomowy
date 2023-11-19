@@ -25,13 +25,16 @@ const FetchingData = () => {
           </span>
         </CardContent>
       </Card>
-
-      <span className="inline-block mb-3">
-        Plik <Code>/app/api/products/route.ts</Code>
-      </span>
-
-      <CodeBlock code={exampleRouteHandler} />
-      <p className="mt-4">Teraz możemy wykorzystać go do pobrania produktów!</p>
+      <div className="mx-4 max-w-7xl xl:mx-0">
+        {' '}
+        <span className="inline-block mb-3">
+          Plik <Code>/app/api/products/route.ts</Code>
+        </span>
+        <CodeBlock code={exampleRouteHandler} />
+        <p className="mt-4">
+          Teraz możemy wykorzystać go do pobrania produktów!
+        </p>
+      </div>
     </>
   );
 };

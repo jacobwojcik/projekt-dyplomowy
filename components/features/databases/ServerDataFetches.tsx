@@ -4,8 +4,8 @@ import { componentDbCall } from '@/lib/consts/codeBlocks';
 
 const ServerDataFetches = () => {
   return (
-    <>
-      <Card className="mx-4 mt-6 mb-6 max-w-7xl xl:mx-0 ">
+    <div className="mx-4 mt-6 mb-6 max-w-7xl xl:mx-0">
+      <Card className="mb-6">
         <CardContent className="flex flex-col gap-2 mt-5">
           <p>
             Ponieważ w Next.js można tworzyć komponenty renderowane po stronie
@@ -19,7 +19,7 @@ const ServerDataFetches = () => {
       </Card>
 
       <CodeBlock code={componentDbCall} />
-    </>
+    </div>
   );
 };
 

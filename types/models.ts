@@ -41,3 +41,5 @@ export enum TodoCategoryEnum {
   Health = 'Zdrowie',
   Travel = 'Podróże',
 }
+
+export type CategoryProductSummary = Database['public']['Functions']['get_category_product_summary']['Returns'];

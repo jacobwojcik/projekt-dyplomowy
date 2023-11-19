@@ -1,3 +1,4 @@
+import DatabasePerformance from '@/components/features/databases/DatabasePerformance';
 import DatabasesCard from '@/components/features/databases/DatabasesCard';
 import FetchingData from '@/components/features/databases/FetchingData';
 import FilteredProductList from '@/components/features/databases/FilteredProductList';
@@ -23,6 +24,8 @@ export default async function Page() {
         <ServerDataFetches />
 
         <FilteredProductList products={products} />
+
+        <DatabasePerformance />
 
         <SectionNavigation
           navOptions={{

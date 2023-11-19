@@ -72,7 +72,7 @@ const FilteredProductList = ({ products }: Props) => {
   }, [categoryValue, sortingValue]);
 
   return (
-    <div>
+    <div className="mx-4 max-w-7xl xl:mx-0">
       <div>
         <h3 className="my-3 text-xl">Filtrowanie</h3>
         <div className="flex items-end gap-6">

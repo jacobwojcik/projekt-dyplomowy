@@ -52,3 +52,38 @@ export const componentDbCall = `export default function Page() {
       {data}
     </section>
 `
+
+
+
+export const cachedRequest = `import { cache } from 'react'
+// Użycie cache()
+export const getData = cache(async () => {
+  // ...
+})`
+
+export const duplicatedRequest = `const data = await getData();
+//...
+//...
+const dataInOtherPlace = await getData();`
+
+
+export const sqlFunction = `SELECT
+  c.name,
+  COUNT(p.id),
+  SUM(p.price)
+FROM
+  category c
+JOIN
+  product p ON c.id = p.category_id
+GROUP BY
+  c.name
+ORDER BY
+  COUNT(p.id) DESC;`
+
+
+export const rpcCall = `const { data: categorySummary } = await supabase
+  .rpc('get_category_product_summary', {selected_limit: limit})
+  .select('*');`
+
+
+
