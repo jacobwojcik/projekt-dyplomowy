@@ -1,7 +1,7 @@
 import TimesCodeBlock from '@/components/features/cache/TimesCodeBlock';
-import CachingCard from '@/components/features/next-13/CachingCard';
-import PossibilitiesCard from '@/components/features/next-13/PossibilitiesCard';
-import TimeTable from '@/components/features/next-13/TimeTable';
+import CachingCard from '@/components/features/cache/CachingCard';
+import PossibilitiesCard from '@/components/features/cache/PossibilitiesCard';
+import TimeTable from '@/components/features/cache/TimeTable';
 import SectionNavigation from '@/components/shared/SectionNavigation';
 
 export const revalidate = 30;

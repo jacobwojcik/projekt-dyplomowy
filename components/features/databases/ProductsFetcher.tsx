@@ -13,7 +13,7 @@ const ProductsFetcher = () => {
   const fetchProducts = async () => {
     setisLoading(true);
 
-    const res = await fetch('api/browse/products?limit=3');
+    const res = await fetch('api/products?limit=3');
     const data: ProductInfo[] = await res.json();
 
     setisLoading(false);

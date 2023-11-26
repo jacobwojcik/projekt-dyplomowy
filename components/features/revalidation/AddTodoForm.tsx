@@ -74,8 +74,6 @@ const AddTodoForm = () => {
         title: 'Coś poszło nie tak!',
         description: 'Spróbuj ponownie później',
       });
-
-      // eslint-disable-next-line no-console
       console.error(e);
     }
   };

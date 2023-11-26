@@ -72,7 +72,7 @@ const OptimizeInstructions = () => {
             <p className="mb-3">
               Część komponentów które nie są widoczne odrazu po załadowaniu
               strony (na przykład rozwijalne menu) mogą być załadowane
-              dynamicznie. Dzięki temu zmniejszasz ilośc danych ładwanych na
+              dynamicznie. Dzięki temu zmniejszasz ilość danych ładwanych na
               start przez przeglądarke.
             </p>
             <CodeBlock code={dynamicLoading} />

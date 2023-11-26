@@ -55,9 +55,7 @@ const FilteredProductList = ({ products }: Props) => {
       try {
         setIsLoading(true);
         const res = await fetch(
-          `api/browse/products${
-            stringifiedParams ? '?' + stringifiedParams : ''
-          }`
+          `api/products${stringifiedParams ? '?' + stringifiedParams : ''}`
         );
 
         const data = await res.json();
