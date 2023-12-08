@@ -12,7 +12,7 @@ const monteserrat = Montserrat({
   variable: '--font-montserrat',
 });
 
-export const firaCode = Fira_Code({
+const firaCode = Fira_Code({
   subsets: ['latin'],
   variable: '--font-fira-code',
   display: 'swap',
